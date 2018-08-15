@@ -21,7 +21,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
+								<h1><a href="index.php" id="logo">Lecture du Jouuuuuur</a></h1>
 								<hr />
 							</header>
 							<footer>
