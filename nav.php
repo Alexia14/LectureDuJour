@@ -4,7 +4,7 @@
 		<li>
 			<a href="#">Roman</a>
 			<ul>
-				<li><a href="#">Policer</a></li>
+				<li><a href="#">Policier</a></li>
 				<li><a href="#">Magna phasellus</a></li>
 				<li><a href="#">Etiam dolore nisl</a></li>
 				<li>
@@ -22,6 +22,6 @@
 		<li><a href="left-sidebar.php">Théâtre</a></li>
 		<li><a href="right-sidebar.php">BD</a></li>
 		<li><a href="no-sidebar.php">A propos</a></li>
-		<li>Contact</li>
+		<li><a href="contact.php">Contact</a></li>
 	</ul>
 </nav>
