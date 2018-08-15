@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="no-sidebar is-preload">
+	<body class="right-sidebar is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -22,6 +22,8 @@
 						<div class="inner">
 							<header>
 								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
+								<hr />
+								<p>A propos</p>
 							</header>
 						</div>
 
