@@ -22,6 +22,8 @@
 						<div class="inner">
 							<header>
 								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
+								<hr />
+								<p>Contact</p>
 							</header>
 						</div>
 

@@ -1,0 +1,4 @@
+.newLivre > tbody > tr > td > input[type="radio"] {
+	-webkit-appearance: radio;
+	width: 10%;
+}

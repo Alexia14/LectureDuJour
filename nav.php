@@ -26,6 +26,7 @@
 				</li>
 			</ul>
 		</li>
+		<li><a href="new_reading.php">Nouvelle saisie</a></li>
 		<li><a href="apropos.php">A propos</a></li>
 		<li><a href="contact.php">Contact</a></li>
 	</ul>
