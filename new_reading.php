@@ -28,7 +28,6 @@ if (isset($_POST) and !empty($_POST)) {
 		'parution' => $parution,
 		'resume' => (isset($_POST['resume'])) ? $_POST['resume'] : 'resume'
 	));
-	echo $_POST['resume'];
 }
 ?>
 
