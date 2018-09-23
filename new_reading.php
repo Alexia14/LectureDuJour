@@ -11,22 +11,68 @@ if (isset($_POST) and !empty($_POST)) {
 	    die('Erreur : '.$e->getMessage());
 	}
 
+	$deja_existant = $bdd->prepare("SELECT * FROM oeuvres WHERE titre = :titre AND auteur = :auteur");
+	$deja_existant->execute(array(
+		'titre' => $_POST['titre'],
+		'auteur' => $_POST['auteur']
+		));
+	$nb_existant = $deja_existant->fetch();
+
+	if ($nb_existant == null) {
+		ajout_oeuvre();
+	}
+	else echo "<script>alert('L\'oeuvre saisie existe déjà');</script>";
+}
+
+function ajout_oeuvre() {
+	try
+	{
+		$bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
+	}
+	catch(Exception $e)
+	{
+	    die('Erreur : '.$e->getMessage());
+	}
+
+	$parution = $_POST['mois'] . " " . $_POST['annee'];
 	if(isset($_POST) && !empty($_POST)) { // Teste si $_POST existe et n'est pas vide
 	    foreach ($_POST as $key => $value) {
 	        if($_POST[$key] == "-- mois --")
-	            $_POST[$key] = "";
+	            $parution = $_POST['annee'];
+	        elseif ($_POST[$key] == "-- sélectionner --") {
+	        	$_POST[$key] = "";
+	        }
 	    }
 	}
-	$parution = $_POST['mois'] + $_POST['annee'];
 
-	$lecture = $bdd->prepare("INSERT INTO oeuvres (titre, auteur, style, nationnalite, parution, resume) VALUES(:titre, :auteur, :style, :nationnalite, :parution, :resume)");
+	if (isset($_POST['style']) and !empty($_POST['style'])) {
+		$styleOeuvre = $_POST['style'];
+	}
+	elseif (isset($_POST['newStyle'])) {
+		$styleOeuvre = $_POST['newStyle'];
+	}
+
+	$listePersos = $_POST['nomPerso1'] . " : " . $_POST['rolePerso1'];
+	if (isset($_POST['nomPerso2'])) {
+		$var = 2;
+		foreach ($_POST as $key => $value) {
+			if ($key == "nomPerso".$var) {
+				$listePersos .= "§". $_POST[$key] ." : ". $_POST['rolePerso'.$var];
+				$var++;
+			}
+		}
+	}
+
+	$lecture = $bdd->prepare("INSERT INTO oeuvres (titre, auteur, type, style, nationalite, parution, personnages, resume) VALUES(:titre, :auteur, :type, :style, :nationalite, :parution, :personnages, :resume)");
 	$lecture->execute(array(
-		'titre' => (isset($_POST['titre'])) ? $_POST['titre'] : 'titre',
-		'auteur' => (isset($_POST['auteur'])) ? $_POST['auteur'] : 'auteur',
-		'style' => (isset($_POST['style'])) ? $_POST['style'] : 'style',
-		'nationnalite' => (isset($_POST['nationnalite'])) ? $_POST['nationnalite'] : 'nationnalite',
+		'titre' => $_POST['titre'],
+		'auteur' => $_POST['auteur'],
+		'type' => $_POST['type'],
+		'style' => $styleOeuvre,
+		'nationalite' => $_POST['nationalite'],
 		'parution' => $parution,
-		'resume' => (isset($_POST['resume'])) ? $_POST['resume'] : 'resume'
+		'personnages' => $listePersos,
+		'resume' => $_POST['resume']
 	));
 }
 ?>
@@ -74,60 +120,96 @@ if (isset($_POST) and !empty($_POST)) {
 							<form method="post" action="#">
 								<table class="newLivre">
 									<tr>
-										<td>Titre :</td>
+										<td style="font-weight: bold;">Titre :</td>
 										<td colspan="2"><input type="text" name="titre" required/></td>
 									</tr>
 									<tr>
-										<td>Auteur :</td>
+										<td style="font-weight: bold;">Auteur :</td>
 										<td colspan="2"><input type="text" name="auteur" required/></td>
 									</tr>
 									<tr>
-										<td>Style :</td>
+										<td style="font-weight: bold;">Style :</td>
 										<td colspan="2">
-											Roman : 
-											<input type="radio" name="style" value="Autobiographique" checked> Autobiographique
-											<input type="radio" name="style" value="Littéraire"> Littéraire
-											<input type="radio" name="style" value="Policier"> Policier
-											<br />
-											Théâtre : 
-											<input type="radio" name="style" value="Absurde"> Absurde
-											<input type="radio" name="style" value="Burlesque"> Burlesque
-											<br />
-											Jeunesse : 
-											<input type="radio" name="style" value="Roman jeunesse"> Roman jeunesse
-											<br />
-											BD : 
-											<input type="radio" name="style" value="Humoristique française"> Humoristique française
-											<input type="radio" name="style" value="Humoristique belge"> Humoristique belge
+											<select name="type" onchange="style_livre(this.value)">
+												<option>-- sélectionner --</option>
+												<option value="Roman">Roman</option>
+												<option value="Théâtre">Théâtre</option>
+												<option value="Jeunesse">Jeunesse</option>
+												<option value="BD">BD</option>
+											</select>
+
+											<div id="blockRoman" class="block_style_livre">
+												<input type="radio" name="style" value="Autobiographique">Autobiographique
+												<input type="radio" name="style" value="Littéraire">Littéraire
+												<input type="radio" name="style" value="Policier">Policier
+												<div style="display: flex;">
+													<input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
+												</div>
+											</div>
+											<div id="blockThéâtre" class="block_style_livre">
+												<input type="radio" name="style" value="Absurde">Absurde
+												<input type="radio" name="style" value="Burlesque">Burlesque
+												<div style="display: flex;">
+													<input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
+												</div>
+											</div>
+											<div id="blockJeunesse" class="block_style_livre">
+												<input type="radio" name="style" value="Roman jeunesse">Roman jeunesse
+												<div style="display: flex;">
+													<input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
+												</div>
+											</div>
+											<div id="blockBD" class="block_style_livre">
+												<input type="radio" name="style" value="Humoristique française">Humoristique française
+												<input type="radio" name="style" value="Humoristique belge">Humoristique belge
+												<div style="display: flex;">
+													<input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
+												</div>
+											</div>
 										</td>
 									</tr>
 									<tr>
-										<td>Nationnalité :</td>
-										<td colspan="2"><input type="text" name="nationnalite"/></td>
+										<td style="font-weight: bold;">Nationalité :</td>
+										<td colspan="2"><input type="text" name="nationalite"/></td>
 									</tr>
 									<tr>
-										<td>Date de parution :</td>
-										<td>
+										<td style="font-weight: bold;">Date de parution :</td>
+										<td style="width: 30%;">
 											<select name="mois">
 												<option>-- mois --</option>
-												<option>Janvier</option>
-												<option>Février</option>
-												<option>Mars</option>
-												<option>Avril</option>
-												<option>Mai</option>
-												<option>Juin</option>
-												<option>Juillet</option>
-												<option>Aôut</option>
-												<option>Septembre</option>
-												<option>Octobre</option>
-												<option>Novembre</option>
-												<option>Decembre</option>
+												<option value="Janvier">Janvier</option>
+												<option value="Février">Février</option>
+												<option value="Mars">Mars</option>
+												<option value="Avril">Avril</option>
+												<option value="Mai">Mai</option>
+												<option value="Juin">Juin</option>
+												<option value="Juillet">Juillet</option>
+												<option value="Aôut">Aôut</option>
+												<option value="Septembre">Septembre</option>
+												<option value="Octobre">Octobre</option>
+												<option value="Novembre">Novembre</option>
+												<option value="Décembre">Décembre</option>
 											</select>
 										</td>
-										<td><input type="number" name="annee" placeholder="année (aaaa)" pattern="[0-9]{4}" required/></td>
+										<td><input type="number" name="annee" min="1" max="2020" placeholder="année (aaaa)" required/></td>
 									</tr>
 									<tr>
-										<td>Résumé :</td>
+										<td style="font-weight: bold;">Personnages :</td>
+										<td colspan="2">
+											<table id="persos" style="margin-top: 10px; margin-bottom: 0;">
+												<tr>
+													<td style="width: 30%;"><input type="text" name="nomPerso1" placeholder="Perso principal" required></td>
+													<td><input type="text" name="rolePerso1" placeholder="rôle" required></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td colspan="2"><input type="button" value="+" onclick="ajout_perso()" style="margin: 10px; margin-left: 30px;" /></td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">Résumé :</td>
 										<td colspan="2"><textarea type="text" name="resume" required/></textarea></td>
 									</tr>
 				                    <tr>
@@ -193,3 +275,24 @@ if (isset($_POST) and !empty($_POST)) {
 
 	</body>
 </html>
+
+<script>
+	function style_livre(value) {
+		tab_blocks = document.getElementsByClassName('block_style_livre');
+		for (let i=0; i<tab_blocks.length; i++) {
+			tab_blocks[i].style.display = 'none'
+		}
+		document.getElementById(`block${value}`).style.display = 'block';
+	}
+
+	let num = 2;
+	function ajout_perso() {
+		var table = document.getElementById("persos");
+	    var row = table.insertRow(-1);
+	    var cell1 = row.insertCell(0);
+	    var cell2 = row.insertCell(1);
+	    cell1.innerHTML = `<input type='text' name='nomPerso${num}' placeholder='nom'>`;
+	    cell2.innerHTML = `<input type='text' name='rolePerso${num}' placeholder='rôle'>`;
+	    num++;
+	}
+</script>

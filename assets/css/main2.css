@@ -1,4 +1,13 @@
-.newLivre > tbody > tr > td > input[type="radio"] {
+.newLivre > tbody > tr > td > div > input[type="radio"] {
 	-webkit-appearance: radio;
-	width: 10%;
+	width: 5%;
+}
+.newLivre > tbody > tr > td > div > div > input[type="radio"] {
+	-webkit-appearance: radio;
+	width: 5%;
+}
+
+.block_style_livre {
+	display: none;
+	margin: 20px;
 }
