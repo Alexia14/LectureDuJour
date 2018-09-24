@@ -117,7 +117,7 @@ function ajout_oeuvre() {
 								<img style="height: 300px;" src="images/lecture.jpeg" alt="Lecture d'Astérix" />
 							</header>
 							
-							<form method="post" action="#">
+							<form method="post">
 								<table class="newLivre">
 									<tr>
 										<td style="font-weight: bold;">Titre :</td>

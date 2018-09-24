@@ -11,3 +11,32 @@
 	display: none;
 	margin: 20px;
 }
+
+.oeuvre {
+	margin: 0;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.oeuvre p {
+	margin: 0;
+}
+
+.titre {
+	font-size: 35px;
+	color: #df7366;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+}
+.auteur, .nationalite, .parution {
+	text-align: right;
+	color: #808080;
+	margin: 0;
+}
+.personnages {
+	margin-left: 20px;
+}
+.resume {
+	color: #df7366;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+}
