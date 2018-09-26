@@ -14,6 +14,13 @@ function oeuvre($type, $style) {
 
 	$oeuvre = "";
 	while($donnees = $reponse->fetch()) {
+		$liste_personnages = explode("§", $donnees['personnages']);
+		$personnages = "";
+		for ($i=0; $i < count($liste_personnages); $i++) {
+			if ($liste_personnages[$i] != "") {
+				$personnages .= "<li class=\"personnages\">" . $liste_personnages[$i] . "</li>";
+			}
+		}
 		$oeuvre .= "
 			<hr style=\"margin-bottom: 6rem;\"/>
 			<section class=\"oeuvre\">
@@ -23,14 +30,17 @@ function oeuvre($type, $style) {
 				<p class=\"parution\">" . $donnees['parution'] . "</p>
 				<br />
 				<p class=\"resume\">Liste des personnages :</p>
-				<ul>
-					<li class=\"personnages\">" . str_replace(§, "</li><li class=\"personnages\">",$donnees['personnages']) . "</li>
-				</ul>
+				<ul>" . $personnages . "</ul>
 				<br />
 				<p class=\"resume\">Résumé :</p>
 				<p>" . $donnees['resume'] . "</p>
 			</section>
 			";
+			/*
+			couper les personnages aux §
+			mettre § après tous les persos et split pour avoir un tableau
+			afficher tableau
+			*/
 	}
 
 	$reponse->closeCursor();

@@ -52,12 +52,12 @@ function ajout_oeuvre() {
 		$styleOeuvre = $_POST['newStyle'];
 	}
 
-	$listePersos = $_POST['nomPerso1'] . " : " . $_POST['rolePerso1'];
-	if (isset($_POST['nomPerso2'])) {
-		$var = 2;
+	$listePersos = "";
+	if (isset($_POST['nomPerso1'])) {
+		$var = 1;
 		foreach ($_POST as $key => $value) {
 			if ($key == "nomPerso".$var) {
-				$listePersos .= "§". $_POST[$key] ." : ". $_POST['rolePerso'.$var];
+				$listePersos .= $_POST[$key] ." : ". $_POST['rolePerso'.$var] . "§";
 				$var++;
 			}
 		}

@@ -1,4 +1,4 @@
-<nav id="nav">
+<nav id="nav" class="cl-effect-1">
 	<ul>
 		<li><a href="index.php">Accueil</a></li>
 		<li>
@@ -8,24 +8,30 @@
 					<a href="novel.php">Roman</a>
 					<ul>
 						<li><a href="autobiography.php">Autobiographique</a></li>
-						<li><a href="#">Littéraire</a></li>
-						<li><a href="#">Policier</a></li>
+						<li><a href="literature.php">Littéraire</a></li>
+						<li><a href="detective.php">Policier</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="left-sidebar.php">Théâtre</a>
+					<a href="theatre.php">Théâtre</a>
 					<ul>
-						<li><a href="#">Absurde</a></li>
-						<li><a href="#">Burlesque</a></li>
+						<li><a href="absurd.php">Absurde</a></li>
+						<li><a href="burlesque.php">Burlesque</a></li>
 						</li>
 					</ul>
 				</li>
-				<li><a href="right-sidebar.php">Jeunesse</a></li>
 				<li>
-					<a href="right-sidebar.php">BD</a>
+					<a href="youth.php">Jeunesse</a>
 					<ul>
-						<li><a href="#">Fantastique française</a></li>
-						<li><a href="#">Humoristique belge</a></li>
+						<li><a href="youthnovel.php">Roman jeunesse</a></li>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="comic.php">BD</a>
+					<ul>
+						<li><a href="fantastic.php">Fantastique</a></li>
+						<li><a href="cartoon.php">Humoristique</a></li>
 						</li>
 					</ul>
 				</li>
