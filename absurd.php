@@ -1,3 +1,39 @@
+<?php
+function citation() {
+	$citation = rand(1, 5);
+	echo "<span class=\"quotation1\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+	switch ($citation) {
+		case 1:
+			echo "Nous naissons tous fous. Quelques-uns le demeurent.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Samuel Beckett</i>";
+			break;
+		case 2:
+			echo "Je ne sais pas qui est Godot. Je ne sais même pas s'il existe.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Samuel Beckett</i>";
+			break;
+		case 3:
+			echo "Se donner du mal pour les petites choses, c’est parvenir aux grandes, avec le temps.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Samuel Beckett</i>";
+			break;
+		case 4:
+			echo "Les racines des mots sont-elles carrées ?
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Eugène Ionesco</i>";
+			break;
+		case 5:
+			echo "Fini, c'est fini, ça va finir, ça va peut-être finir. Les grains s'ajoutent aux grains, un à un, et un jour, soudain, c'est un tas, un petit tas, l'impossible tas.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Fin de partie, Samuel Beckett</i>";
+			break;
+		default:
+			break;
+	}
+}
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Helios by HTML5 UP
@@ -24,7 +60,7 @@
 							<header>
 								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
 								<hr />
-								<p>Romans</p>
+								<p>Théâtre</p>
 							</header>
 						</div>
 
@@ -41,30 +77,31 @@
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header>
-										<h2>Autobiographie</h2>
+										<h2>Absurde</h2>
 										<p>
-											Selon Philippe Lejeune, l'autobiographie est un<br /><i>« récit rétrospectif en prose qu'une personne réelle fait de sa propre existance, lorsqu'elle met l'accent sur sa vie individuelle, en particulier sur l'histoire de sa personnalité. »</i>
+											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="images/autobiographie.jpg" alt="autobiographie" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+									<center><img src="images/absurde.jpg" alt="Théatre" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
 									<?php include('display_book.php') ?>
-									<?php oeuvre('Roman', 'Autobiographique'); ?>
+									<?php oeuvre('Théâtre', 'Absurde'); ?>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
 								<hr class="first" />
 								<section>
 									<header>
-										<h3>Roman autobiographique</h3>
+										<h3>Théâtre de l'absurde</h3>
 									</header>
 									<p>
-										Le roman autobiographique est un genre littéraire issu de l'autobiographie ainsi que du roman-mémoires. Le sujet est un personnage de fiction dont la vie, narrée à la première personne du singulier, est assez fortement inspirée par la vie de l'auteur.<br />
-										À la différence du roman-mémoires, il y a identité de l’auteur et du narrateur.
+										Le théâtre de l'absurde est un style de théâtre apparu au xxe siècle, à l'époque de la Seconde Guerre mondiale, qui se caractérise par une rupture totale avec des genres plus classiques, tels que la tragédie, la comédie ou la tragi-comédie. [...]
+										C'est un genre traitant fréquemment de l'absurdité de l'Homme et de la vie. [...]<br />
+										Eugène Ionesco, Samuel Beckett, Arthur Adamov, Jean Genet, voire Harold Pinter sont parmi les auteurs de ces œuvres qui ont bouleversé les conventions du genre.
 										<br />
 										<i>(Wikipedia)</i>
 									</p>
 									<footer>
-										<a href="https://fr.wikipedia.org/wiki/Roman_autobiographique" class="button">Lire plus</a>
+										<a href="https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_de_l%27absurde" class="button">Lire plus</a>
 									</footer>
 								</section>
 								<hr />

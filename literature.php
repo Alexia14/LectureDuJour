@@ -1,3 +1,64 @@
+<?php
+function citation() {
+	$citation = rand(1, 10);
+	echo "<span class=\"quotation1\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+	switch ($citation) {
+		case 1:
+			echo "Littérature populaire ne signifie pas littérature lue par le peuple, c’est une littérature qui se doit de fournir en premier lieu une lecture pour le plus grand nombre de gens possible.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Jean-Bernard Pouy</i>";
+			break;
+		case 2:
+			echo "Il n’y a pas d’heure pour la littérature ; la littérature n’est jamais à l’heure.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Bernard-Henri Lévy</i>";
+			break;
+		case 3:
+			echo "La littérature est le chant du cœur du peuple et le peuple est l'âme de la littérature.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Jiang Zilong</i>";
+			break;
+		case 4:
+			echo "La différence entre littérature et journalisme, c'est que le journalisme est illisible et que la littérature n'est pas lue.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Oscar Wilde</i>";
+			break;
+		case 5:
+			echo "On aimerait à savoir si c'est la littérature qui corrompt les moeurs ou les moeurs au contraire qui corrompent la littérature.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Alfred Capus</i>";
+			break;
+		case 6:
+			echo "La vie est la source de la littérature et la littérature doit être fidèle à la vie.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Gao Xingjian</i>";
+			break;
+		case 7:
+			echo "Littérature populaire ne signifie pas littérature lue par le peuple, c’est une littérature qui se doit de fournir en premier lieu une lecture pour le plus grand nombre de gens possible.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Jean-Bernard Pouy</i>";
+			break;
+		case 8:
+			echo "Si Dieu existe, à quoi bon la littérature ? Si Dieu n'existe pas, alors à quoi bon faire de la littérature ?
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Eugène Ionesco</i>";
+			break;
+		case 9:
+			echo "Le cinéma se nourrit de littérature, et la littérature se nourrit de tout, notamment de cinéma.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Martin Page</i>";
+			break;
+		case 10:
+			echo "La littérature ne change ni l'homme ni la société. Pour autant, l'absence de littérature rendrait l'homme encore plus infréquentable.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Tahar Ben Jelloun</i>";
+			break;
+		default:
+			break;
+	}
+}
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Helios by HTML5 UP
@@ -41,30 +102,33 @@
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header>
-										<h2>Autobiographie</h2>
+										<h2>Littérature</h2>
 										<p>
-											Selon Philippe Lejeune, l'autobiographie est un<br /><i>« récit rétrospectif en prose qu'une personne réelle fait de sa propre existance, lorsqu'elle met l'accent sur sa vie individuelle, en particulier sur l'histoire de sa personnalité. »</i>
+											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="images/autobiographie.jpg" alt="autobiographie" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+									<center><img src="images/littérature.jpg" alt="Littérature" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
 									<?php include('display_book.php') ?>
-									<?php oeuvre('Roman', 'Autobiographique'); ?>
+									<?php oeuvre('Roman', 'Littérature'); ?>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
 								<hr class="first" />
 								<section>
 									<header>
-										<h3>Roman autobiographique</h3>
+										<h3>Littérature</h3>
 									</header>
 									<p>
-										Le roman autobiographique est un genre littéraire issu de l'autobiographie ainsi que du roman-mémoires. Le sujet est un personnage de fiction dont la vie, narrée à la première personne du singulier, est assez fortement inspirée par la vie de l'auteur.<br />
-										À la différence du roman-mémoires, il y a identité de l’auteur et du narrateur.
-										<br />
-										<i>(Wikipedia)</i>
+										Etymologiquement, le mot « Littérature » est issu du latin « littera » qui signifie lettre, et puis « litteratura » : écriture, grammaire et culture, et désigne :
+										<ol>
+											<li>L'ensemble des œuvres écrites ou orales fondées sur la langue et dont la dimension esthétique les distingue des œuvres scientifiques ou didactiques (sens attesté en 1764) ;</li>
+											<li>Les activités de production et d'étude de telles œuvres (sens apparu dans la première partie du XIXe siècle) ;</li>
+											<li>Ensemble de textes publiés relatifs à un sujet, qu'ils aient ou non une dimension esthétique (d'après l'allemand Literatur, 1758). C'est en ce sens que l'on peut parler par exemple de littérature scientifique.</li>
+										</ol>
+										<i>(Overblog : Qu'est ce que la littérature?)</i>
 									</p>
 									<footer>
-										<a href="https://fr.wikipedia.org/wiki/Roman_autobiographique" class="button">Lire plus</a>
+										<a href="http://lifim2010.over-blog.com/article-qu-est-ce-que-la-litterature-75696778.html" class="button">Lire plus</a>
 									</footer>
 								</section>
 								<hr />

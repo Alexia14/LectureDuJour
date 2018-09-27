@@ -1,3 +1,44 @@
+<?php
+function citation() {
+	$citation = rand(1, 6);
+	echo "<span class=\"quotation1\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+	switch ($citation) {
+		case 1:
+			echo "La seule chose que nous ayons à craindre, c'est que le ciel nous tombe sur la tête !
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>René Goscinny</i>";
+			break;
+		case 2:
+			echo "Comme on dit «il faut rendre à César ce qui appartient à César», j'ai envie de dire: «Il faut rendre Astérix à ses lecteurs. Car c'est à eux qu'il appartient... Et pas à moi.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Albert Uderzo</i>";
+			break;
+		case 3:
+			echo "Vous n'êtes pas honteux ? VOUS VOUS ETES CONDUITS COMME DES HUMAINS !!
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Les Schtroumpfs, Peyo</i>";
+			break;
+		case 4:
+			echo "Parce que ce schtroumpf est schtroumpfé pour schtroumpfer de la schtroumpf au schtroumpf et non pas des schtroumpfs schtroumpfés !
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Les Schtroumpfs, Peyo</i>";
+			break;
+		case 5:
+			echo "Ah non, Schtroumpf à Lunettes...Ne recommence pas avec tes réflexions schtroumpfistes !
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Les Schtroumpfs, Peyo</i>";
+			break;
+		case 6:
+			echo "Avez-vous été attaqués par une force supérieure en nombre ?<br />Supérieure en nombre...<br />...On ne peut pas dire !!!<br />Ils étaient un...<br />...Et pas bien gros avec ça !
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Astérix le Gaulois, René Goscinny et Albert Uderzo</i>";
+			break;
+		default:
+			break;
+	}
+}
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Helios by HTML5 UP
@@ -24,7 +65,7 @@
 							<header>
 								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
 								<hr />
-								<p>Romans</p>
+								<p>Bande dessinée</p>
 							</header>
 						</div>
 
@@ -41,30 +82,29 @@
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header>
-										<h2>Autobiographie</h2>
+										<h2>BD Humoristiques</h2>
 										<p>
-											Selon Philippe Lejeune, l'autobiographie est un<br /><i>« récit rétrospectif en prose qu'une personne réelle fait de sa propre existance, lorsqu'elle met l'accent sur sa vie individuelle, en particulier sur l'histoire de sa personnalité. »</i>
+											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="images/autobiographie.jpg" alt="autobiographie" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+									<center><img src="images/smurf.jpg" alt="Schtroumpf à Lunettes" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
 									<?php include('display_book.php') ?>
-									<?php oeuvre('Roman', 'Autobiographique'); ?>
+									<?php oeuvre('BD', 'Humoristique'); ?>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
 								<hr class="first" />
 								<section>
 									<header>
-										<h3>Roman autobiographique</h3>
+										<h3>Bande dessinée Humoristique</h3>
 									</header>
 									<p>
-										Le roman autobiographique est un genre littéraire issu de l'autobiographie ainsi que du roman-mémoires. Le sujet est un personnage de fiction dont la vie, narrée à la première personne du singulier, est assez fortement inspirée par la vie de l'auteur.<br />
-										À la différence du roman-mémoires, il y a identité de l’auteur et du narrateur.
+										La bande dessinée humoristique ou bande dessinée d'humour est le premier type de bande dessinée à avoir été développé. Les bandes dessinées humoristiques existent dans tous types de formats (comic strip, Gag, récit complet, etc.) et peuvent s'adresser selon le type d'humour aux enfants comme aux adultes.
 										<br />
-										<i>(Wikipedia)</i>
+										<i>(Wikipédia)</i>
 									</p>
 									<footer>
-										<a href="https://fr.wikipedia.org/wiki/Roman_autobiographique" class="button">Lire plus</a>
+										<a href="https://fr.wikipedia.org/wiki/Bande_dessin%C3%A9e_humoristique" class="button">Lire plus</a>
 									</footer>
 								</section>
 								<hr />

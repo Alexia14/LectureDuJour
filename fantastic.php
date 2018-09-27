@@ -1,3 +1,43 @@
+<?php
+function citation() {
+	$citation = rand(1, 10);
+	switch ($citation) {
+		case 1:
+			echo "« citation. »<br /><i>auteur</i>";
+			break;
+		case 2:
+			echo "« </i>";
+			break;
+		case 3:
+			echo "« </i>";
+			break;
+		case 4:
+			echo "« </i>";
+			break;
+		case 5:
+			echo "« </i>";
+			break;
+		case 6:
+			echo "« </i>";
+			break;
+		case 7:
+			echo "« </i>";
+			break;
+		case 8:
+			echo "« </i>";
+			break;
+		case 9:
+			echo "« </i>";
+			break;
+		case 10:
+			echo "« </i>";
+			break;
+		default:
+			break;
+	}
+}
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Helios by HTML5 UP
@@ -24,7 +64,7 @@
 							<header>
 								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
 								<hr />
-								<p>Romans</p>
+								<p>Bande dessinée</p>
 							</header>
 						</div>
 
@@ -41,30 +81,29 @@
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header>
-										<h2>Autobiographie</h2>
+										<h2>BD Fantastiques</h2>
 										<p>
-											Selon Philippe Lejeune, l'autobiographie est un<br /><i>« récit rétrospectif en prose qu'une personne réelle fait de sa propre existance, lorsqu'elle met l'accent sur sa vie individuelle, en particulier sur l'histoire de sa personnalité. »</i>
+											<?php citation(); ?>
 										</p>
 									</header>
 									<center><img src="images/autobiographie.jpg" alt="autobiographie" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
 									<?php include('display_book.php') ?>
-									<?php oeuvre('Roman', 'Autobiographique'); ?>
+									<?php oeuvre('BD', 'Fantastique'); ?>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
 								<hr class="first" />
 								<section>
 									<header>
-										<h3>Roman autobiographique</h3>
+										<h3>Fantastique</h3>
 									</header>
 									<p>
-										Le roman autobiographique est un genre littéraire issu de l'autobiographie ainsi que du roman-mémoires. Le sujet est un personnage de fiction dont la vie, narrée à la première personne du singulier, est assez fortement inspirée par la vie de l'auteur.<br />
-										À la différence du roman-mémoires, il y a identité de l’auteur et du narrateur.
+										definition
 										<br />
-										<i>(Wikipedia)</i>
+										<i>(source)</i>
 									</p>
 									<footer>
-										<a href="https://fr.wikipedia.org/wiki/Roman_autobiographique" class="button">Lire plus</a>
+										<a href="" class="button">Lire plus</a>
 									</footer>
 								</section>
 								<hr />

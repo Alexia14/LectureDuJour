@@ -1,24 +1,56 @@
 <?php
-function romans_proposes() {
-	try
-	{
-		$bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
+function citation() {
+	$citation = rand(1, 9);
+	echo "<span class=\"quotation1\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+	switch ($citation) {
+		case 1:
+			echo "Le roman est l'histoire du présent, tandis que l'histoire est le roman du passé.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Georges Duhamel</i>";
+			break;
+		case 2:
+			echo "L'histoire est un roman qui a été ; le roman est de l'histoire qui aurait pu être.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Edmond et Jules de Goncourt</i>";
+			break;
+		case 3:
+			echo "Un roman est un miroir qui se promène sur une grande route.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Stendhal</i>";
+			break;
+		case 4:
+			echo "L'art du roman est de savoir mentir.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Louis Aragon</i>";
+			break;
+		case 5:
+			echo "Excepté pour la passion du héros, un roman doit être un miroir.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Stendhal</i>";
+			break;
+		case 6:
+			echo "Le roman, c’est la clef des chambres interdites de notre maison.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Louis Aragon</i>";
+			break;
+		case 7:
+			echo "Chaque roman est un déicide secret, un assassinat symbolique de la réalité.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Mario Vargas Llosa</i>";
+			break;
+		case 8:
+			echo "Malheur à tout roman que le lecteur n'est pas pressé d'achever.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Jean le Rond d’Alembert</i>";
+			break;
+		case 9:
+			echo "Un roman est comme un archet, la caisse du violon qui rend les sons, c'est l'âme du lecteur.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Stendhal</i>";
+			break;
+		default:
+			break;
 	}
-	catch(Exception $e)
-	{
-	    die('Erreur : '.$e->getMessage());
-	}
-
-	$reponse = $bdd->query('SELECT DISTINCT style FROM oeuvres WHERE type = \'Roman\' ORDER BY style');
-
-	$liste_styles = "<ul>";
-	while($donnees = $reponse->fetch()) {
-		$liste_styles .= "<li style=\"margin-left: 40px;\">" . $donnees['style'] . "</li>";
-	}
-	$liste_styles .= "</ul>";
-
-	$reponse->closeCursor();
-	echo $liste_styles;
 }
 ?>
 
@@ -67,18 +99,18 @@ function romans_proposes() {
 									<header style="display: block;">
 										<h2>Roman</h2>
 										<p>
-											« Un roman est comme un archet, la caisse du violon qui rend les sons, c'est l'âme du lecteur ».
-											<br />Stendhal
+											<?php citation(); ?>
 										</p>
 									</header>
-									<img src="images/roman.jpg" alt="Âme du lecteur" style="width: 500px; box-shadow: 5px 10px 8px #888888" />
+									<center><img src="images/roman.jpg" alt="Âme du lecteur" style="width: 500px; box-shadow: 5px 10px 8px #888888" /></center>
 									<hr />
 									<section>
 										<p>
 											Vous vous trouvez ici dans la catégorie des romans. De façon générale, un roman est un récit en prose de longueur variable.
 											<br />
 											Vous pouvez toruver plusieurs sortes de romans différents. Les styles romanesques présentés dans cette section sont les suivants :
-											<?php romans_proposes(); ?>
+											<?php include('display_book.php') ?>
+											<?php oeuvres_proposes('Roman'); ?>
 										</p>
 									</section>
 									<section>

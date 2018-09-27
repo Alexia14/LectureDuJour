@@ -60,15 +60,29 @@
 	-webkit-appearance: radio;
 	width: 5%;
 }
+input, select {
+	margin-bottom: 10px;
+}
+
+.form_col1 {
+	font-weight: bold;
+	width: 20%;
+}
 
 .block_style_livre {
 	display: none;
 	margin: 20px;
 }
+.fa-plus:before, .fa-times:before {
+	font-size: 30px;
+	color: #df7366;
+}
+.fa:hover {
+	cursor: pointer;
+}
 
 
 /* display_book */
-
 
 .oeuvre {
 	margin: 0;
@@ -97,4 +111,18 @@
 	color: #df7366;
 	font-family: Comic Sans MS;
 	font-weight: bold;
+}
+
+
+.quotation1 {
+	background-image: url('../../images/quotation1.png');
+	background-size: 40px;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+}
+.quotation2 {
+	background-image: url('../../images/quotation2.png');
+	background-size: 40px;
+	background-repeat: no-repeat;
+	opacity: 0.5;
 }

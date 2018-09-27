@@ -1,3 +1,54 @@
+<?php
+function citation() {
+	$citation = rand(1, 8);
+	echo "<span class=\"quotation1\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+	switch ($citation) {
+		case 1:
+			echo "Quand on écrit son autobiographie, on n'a pas le temps de vivre.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Robert Baillie</i>";
+			break;
+		case 2:
+			echo "Il est bien à plaindre celui qui ne vit pas sa vie, mais son autobiographie.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Arthur Schnitzler</i>";
+			break;
+		case 3:
+			echo "Une autobiographie révèle généralement que tout va très bien chez son auteur, sauf la mémoire.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Franklin P. Jones</i>";
+			break;
+		case 4:
+			echo "Une autobiographie sérieuse devrait commencer par une théorie de la mémoire.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Pierre Baillargeon</i>";
+			break;
+		case 5:
+			echo "Tout ce qu’un écrivain produit a sa part d’autobiographie, même s’il s’agit de science-fiction.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Antonio Soler</i>";
+			break;
+		case 6:
+			echo "L'autobiographie est encore le meilleur moyen qu'on ait trouvé pour dire toute la vérité à propos des autres.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Pierre Daninos</i>";
+			break;
+		case 7:
+			echo "Tous les livres sont autobiographiques. Sauf qu'on ne tient pas toujours à être reconnue.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Michèle Mailhot</i>";
+			break;
+		case 8:
+			echo "Les biographies se terminent généralement par la mort du sujet étudié, conclusion naturelle dont ne bénéficient pas les autobiographies.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Eric Hobsbawm</i>";
+			break;
+		default:
+			break;
+	}
+}
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Helios by HTML5 UP
@@ -43,7 +94,7 @@
 									<header>
 										<h2>Autobiographie</h2>
 										<p>
-											Selon Philippe Lejeune, l'autobiographie est un<br /><i>« récit rétrospectif en prose qu'une personne réelle fait de sa propre existance, lorsqu'elle met l'accent sur sa vie individuelle, en particulier sur l'histoire de sa personnalité. »</i>
+											<?php citation(); ?>
 										</p>
 									</header>
 									<center><img src="images/autobiographie.jpg" alt="autobiographie" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>

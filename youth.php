@@ -1,24 +1,41 @@
 <?php
-function romans_proposes() {
-	try
-	{
-		$bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
+function citation() {
+	$citation = rand(1, 6);
+	echo "<span class=\"quotation1\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+	switch ($citation) {
+		case 1:
+			echo "La lecture est une amitié.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Marcel Proust</i>";
+			break;
+		case 2:
+			echo "Une lecture m'émeut plus qu'un malheur réel.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Gustave Flaubert</i>";
+			break;
+		case 3:
+			echo "Une heure de lecture est le souverain remède contre les dégoûts de la vie.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Montesquieu</i>";
+			break;
+		case 4:
+			echo "La lecture est à l'esprit ce que l'exercice est au corps.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>J. Addison</i>";
+			break;
+		case 5:
+			echo "Les citations sont à la lecture ce que les bandes annonces sont au cinéma...
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Franck Dunand</i>";
+			break;
+		case 6:
+			echo "Ce sont nos choix qui montrent ce que nous sommes vraiment, beaucoup plus que nos aptitudes.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Harry Potter et la chambre des secrets, Joanne K. Rowling</i>";
+			break;
+		default:
+			break;
 	}
-	catch(Exception $e)
-	{
-	    die('Erreur : '.$e->getMessage());
-	}
-
-	$reponse = $bdd->query('SELECT DISTINCT style FROM oeuvres WHERE type = \'Roman\' ORDER BY style');
-
-	$liste_styles = "<ul>";
-	while($donnees = $reponse->fetch()) {
-		$liste_styles .= "<li style=\"margin-left: 40px;\">" . $donnees['style'] . "</li>";
-	}
-	$liste_styles .= "</ul>";
-
-	$reponse->closeCursor();
-	echo $liste_styles;
 }
 ?>
 
@@ -48,7 +65,7 @@ function romans_proposes() {
 							<header>
 								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
 								<hr />
-								<p>Romans</p>
+								<p>Jeunesse</p>
 							</header>
 						</div>
 
@@ -65,20 +82,20 @@ function romans_proposes() {
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header style="display: block;">
-										<h2>Roman</h2>
+										<h2>Lecture jeunesse</h2>
 										<p>
-											« Un roman est comme un archet, la caisse du violon qui rend les sons, c'est l'âme du lecteur ».
-											<br />Stendhal
+											<?php citation(); ?>
 										</p>
 									</header>
-									<img src="images/roman.jpg" alt="Âme du lecteur" style="width: 500px; box-shadow: 5px 10px 8px #888888" />
+									<center><img src="images/jeunesse.jpg" alt="Lecture jeunesse" style="width: 600px; box-shadow: 5px 10px 8px #888888" /></center>
 									<hr />
 									<section>
 										<p>
-											Vous vous trouvez ici dans la catégorie des romans. De façon générale, un roman est un récit en prose de longueur variable.
+											Vous vous trouvez ici dans la catégorie jeunesse du site.
 											<br />
-											Vous pouvez toruver plusieurs sortes de romans différents. Les styles romanesques présentés dans cette section sont les suivants :
-											<?php romans_proposes(); ?>
+											Vous pouvez trouver plusieurs sortes de lecture pour adolescents :
+											<?php include('display_book.php') ?>
+											<?php oeuvres_proposes('Jeunesse'); ?>
 										</p>
 									</section>
 									<section>
@@ -90,15 +107,21 @@ function romans_proposes() {
 								<hr class="first" />
 								<section>
 									<header>
-										<h3>Roman</h3>
+										<h3>Littérature de jeunesse</h3>
 									</header>
-									<p>
-										Œuvre d'imagination constituée par un récit en prose d'une certaine longueur, dont l'intérêt est dans la narration d'aventures, l'étude de mœurs ou de caractères, l'analyse de sentiments ou de passions, la représentation du réel ou de diverses données objectives et subjectives ; genre littéraire regroupant les œuvres qui présentent ces caractéristiques.
-										<br />
-										<i>(Larousse.fr)</i>
+									<p style="margin: 0;">
+										La littérature de jeunesse peut être définie comme l’ensemble des œuvres spécialement écrites pour les enfants ou les adolescents, ou de livres écrits pour des adultes qui sont devenus, par leur thème, traditionnellement, des lectures pour les jeunes. [...]<br />
+										L’objectif majeur de la littérature de jeunesse est d’amener le très jeune lecteur à se repérer dans la diversité des écrits.[...] La littérature de jeunesse permet ainsi la découverte du monde au travers de textes qui donnent à partager des modes de pensée et des points de vue variés.<br />
+										La littérature de jeunesse permet de :
+										<ol>
+											<li>nourrir l’imaginaire enfantin</li>
+											<li>faire découvrir un usage particulier de la langue</li>
+											<li>faire découvrir le patrimoine</li>
+										</ol>
+										<i>(salledesprofs.org)</i>
 									</p>
 									<footer>
-										<a href="https://www.larousse.fr/dictionnaires/francais/roman/69755" class="button">Lire plus</a>
+										<a href="http://salledesprofs.org/album-de-jeunesse-pour-un-enrichissement-intellectuel-et-moral-de-lenfance/" class="button">Lire plus</a>
 									</footer>
 								</section>
 								<hr />

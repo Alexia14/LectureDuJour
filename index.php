@@ -17,7 +17,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<div id="header">
+				<div id="header" class="header_home">
 
 					<!-- Inner -->
 						<div class="inner">

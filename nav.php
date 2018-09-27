@@ -13,17 +13,17 @@
 					</ul>
 				</li>
 				<li>
-					<a href="theatre.php">Théâtre</a>
+					<a href="theater.php">Théâtre</a>
 					<ul>
 						<li><a href="absurd.php">Absurde</a></li>
-						<li><a href="burlesque.php">Burlesque</a></li>
+						<li><a href="comedy.php">Comédie</a></li>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="youth.php">Jeunesse</a>
 					<ul>
-						<li><a href="youthnovel.php">Roman jeunesse</a></li>
+						<li><a href="fiction.php">Fiction</a></li>
 						</li>
 					</ul>
 				</li>
@@ -39,7 +39,6 @@
 		</li>
 		<li><a href="search_reading.php">Rechercher</a></li>
 		<li><a href="new_reading.php">Nouvelle saisie</a></li>
-		<li><a href="about.php">A propos</a></li>
-		<li><a href="contact.php">Contact</a></li>
+		<li><a href="connect.php">Connexion</a></li>
 	</ul>
 </nav>

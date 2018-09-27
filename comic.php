@@ -1,24 +1,46 @@
 <?php
-function romans_proposes() {
-	try
-	{
-		$bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
+function citation() {
+	$citation = rand(1, 7);
+	echo "<span class=\"quotation1\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>";
+	switch ($citation) {
+		case 1:
+			echo "La bande dessinée c’est l’évasion.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Grzegorz Rosinski</i>";
+			break;
+		case 2:
+			echo "Faire de la bande dessinée, c’est comme voir ses rêves.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Chris Ware</i>";
+			break;
+		case 3:
+			echo "Les bandes dessinées ne seront jamais aussi tarées que ceux qui aiment ça.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Georges Wolinski</i>";
+			break;
+		case 4:
+			echo "Faire une bande dessinée, c’est se souvenir.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Chris Ware</i>";
+			break;
+		case 5:
+			echo "Il y a toujours un peu de l'auteur dans un personnage... Pourtant Astérix adore le sanglier, moi, j'ai horreur de ça !
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>René Goscinny</i>";
+			break;
+		case 6:
+			echo "La seule chose que nous ayons à craindre, c'est que le ciel nous tombe sur la tête !
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>René Goscinny</i>";
+			break;
+		case 7:
+			echo "Comme on dit «il faut rendre à César ce qui appartient à César», j'ai envie de dire: «Il faut rendre Astérix à ses lecteurs. Car c'est à eux qu'il appartient... Et pas à moi.
+				<span class=\"quotation2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<br /><i>Albert Uderzo</i>";
+			break;
+		default:
+			break;
 	}
-	catch(Exception $e)
-	{
-	    die('Erreur : '.$e->getMessage());
-	}
-
-	$reponse = $bdd->query('SELECT DISTINCT style FROM oeuvres WHERE type = \'Roman\' ORDER BY style');
-
-	$liste_styles = "<ul>";
-	while($donnees = $reponse->fetch()) {
-		$liste_styles .= "<li style=\"margin-left: 40px;\">" . $donnees['style'] . "</li>";
-	}
-	$liste_styles .= "</ul>";
-
-	$reponse->closeCursor();
-	echo $liste_styles;
 }
 ?>
 
@@ -48,7 +70,7 @@ function romans_proposes() {
 							<header>
 								<h1><a href="index.php" id="logo">Lecture du Jour</a></h1>
 								<hr />
-								<p>Romans</p>
+								<p>Bandes dessinées</p>
 							</header>
 						</div>
 
@@ -65,20 +87,20 @@ function romans_proposes() {
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header style="display: block;">
-										<h2>Roman</h2>
+										<h2>Bandes dessinées</h2>
 										<p>
-											« Un roman est comme un archet, la caisse du violon qui rend les sons, c'est l'âme du lecteur ».
-											<br />Stendhal
+											<?php citation(); ?>
 										</p>
 									</header>
-									<img src="images/roman.jpg" alt="Âme du lecteur" style="width: 500px; box-shadow: 5px 10px 8px #888888" />
+									<center><img src="images/BD.jpg" alt="Bande dessinée" style="width: 700px; box-shadow: 5px 10px 8px #888888" /></center>
 									<hr />
 									<section>
 										<p>
-											Vous vous trouvez ici dans la catégorie des romans. De façon générale, un roman est un récit en prose de longueur variable.
+											Vous vous trouvez ici dans la catégorie des bandes dessinées.
 											<br />
-											Vous pouvez toruver plusieurs sortes de romans différents. Les styles romanesques présentés dans cette section sont les suivants :
-											<?php romans_proposes(); ?>
+											Comme pour tout type de lecture, vous pouvez trouver en plusieurs de nombreuses sortes :
+											<?php include('display_book.php') ?>
+											<?php oeuvres_proposes('BD'); ?>
 										</p>
 									</section>
 									<section>
@@ -90,15 +112,16 @@ function romans_proposes() {
 								<hr class="first" />
 								<section>
 									<header>
-										<h3>Roman</h3>
+										<h3>Bande dessinée</h3>
 									</header>
 									<p>
-										Œuvre d'imagination constituée par un récit en prose d'une certaine longueur, dont l'intérêt est dans la narration d'aventures, l'étude de mœurs ou de caractères, l'analyse de sentiments ou de passions, la représentation du réel ou de diverses données objectives et subjectives ; genre littéraire regroupant les œuvres qui présentent ces caractéristiques.
+										Mode de narration utilisant une succession d'images dessinées, incluant, à l'intérieur de bulles, les paroles, sentiments ou pensées des protagonistes.<br />
+										Si certains ont pu hésiter à considérer comme un genre littéraire ou un art plastique un procédé narratif qui mêle texte et image, la bande dessinée (BD) a été baptisée « neuvième art » par ses nombreux fans.
 										<br />
-										<i>(Larousse.fr)</i>
+										<i>(Larousse)</i>
 									</p>
 									<footer>
-										<a href="https://www.larousse.fr/dictionnaires/francais/roman/69755" class="button">Lire plus</a>
+										<a href="http://www.larousse.fr/encyclopedie/divers/bande_dessin%C3%A9e/185578" class="button">Lire plus</a>
 									</footer>
 								</section>
 								<hr />

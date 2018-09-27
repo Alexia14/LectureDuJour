@@ -85,6 +85,7 @@ function ajout_oeuvre() {
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/main2.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="right-sidebar is-preload">
@@ -113,23 +114,23 @@ function ajout_oeuvre() {
 					<div class="container">
 						<article id="main" class="special">
 							<header>
-								<h2 style="float: right;">Une nouvelle lecture à partager ?</h2>
-								<img style="height: 300px;" src="images/lecture.jpeg" alt="Lecture d'Astérix" />
+								<h2>Une nouvelle lecture à partager ?</h2>
+								<img src="images/partage.jpg" alt="Partage de lecture" style="border: solid #df7366 2px; box-shadow: 5px 10px 8px #888888; margin-bottom: 25px;">
 							</header>
 							
 							<form method="post">
 								<table class="newLivre">
 									<tr>
-										<td style="font-weight: bold;">Titre :</td>
-										<td colspan="2"><input type="text" name="titre" required/></td>
+										<td class="form_col1">Titre :</td>
+										<td colspan="3"><input type="text" name="titre" required/></td>
 									</tr>
 									<tr>
-										<td style="font-weight: bold;">Auteur :</td>
-										<td colspan="2"><input type="text" name="auteur" required/></td>
+										<td class="form_col1">Auteur :</td>
+										<td colspan="3"><input type="text" name="auteur" required/></td>
 									</tr>
 									<tr>
-										<td style="font-weight: bold;">Style :</td>
-										<td colspan="2">
+										<td class="form_col1">Style :</td>
+										<td colspan="3">
 											<select name="type" onchange="style_livre(this.value)">
 												<option>-- sélectionner --</option>
 												<option value="Roman">Roman</option>
@@ -148,20 +149,20 @@ function ajout_oeuvre() {
 											</div>
 											<div id="blockThéâtre" class="block_style_livre">
 												<input type="radio" name="style" value="Absurde">Absurde
-												<input type="radio" name="style" value="Burlesque">Burlesque
+												<input type="radio" name="style" value="Comédie">Comédie
 												<div style="display: flex;">
 													<input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
 												</div>
 											</div>
 											<div id="blockJeunesse" class="block_style_livre">
-												<input type="radio" name="style" value="Roman jeunesse">Roman jeunesse
+												<input type="radio" name="style" value="Fiction">Fiction
 												<div style="display: flex;">
 													<input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
 												</div>
 											</div>
 											<div id="blockBD" class="block_style_livre">
-												<input type="radio" name="style" value="Humoristique française">Humoristique française
-												<input type="radio" name="style" value="Humoristique belge">Humoristique belge
+												<input type="radio" name="style" value="Fantastique">Fantastique
+												<input type="radio" name="style" value="Humoristique">Humoristique
 												<div style="display: flex;">
 													<input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
 												</div>
@@ -169,12 +170,12 @@ function ajout_oeuvre() {
 										</td>
 									</tr>
 									<tr>
-										<td style="font-weight: bold;">Nationalité :</td>
-										<td colspan="2"><input type="text" name="nationalite"/></td>
+										<td class="form_col1">Nationalité :</td>
+										<td colspan="3"><input type="text" name="nationalite"/></td>
 									</tr>
 									<tr>
-										<td style="font-weight: bold;">Date de parution :</td>
-										<td style="width: 30%;">
+										<td class="form_col1">Date de parution :</td>
+										<td style="width: 20%;">
 											<select name="mois">
 												<option>-- mois --</option>
 												<option value="Janvier">Janvier</option>
@@ -191,26 +192,29 @@ function ajout_oeuvre() {
 												<option value="Décembre">Décembre</option>
 											</select>
 										</td>
+										<td style="width: 1%;"></td>
 										<td><input type="number" name="annee" min="1" max="2020" placeholder="année (aaaa)" required/></td>
 									</tr>
 									<tr>
-										<td style="font-weight: bold;">Personnages :</td>
-										<td colspan="2">
-											<table id="persos" style="margin-top: 10px; margin-bottom: 0;">
+										<td class="form_col1">Personnages :</td>
+										<td colspan="3">
+											<table id="persos" style="margin-bottom: 0; margin-top: 50px;">
 												<tr>
-													<td style="width: 30%;"><input type="text" name="nomPerso1" placeholder="Perso principal" required></td>
-													<td><input type="text" name="rolePerso1" placeholder="rôle" required></td>
+													<td style="width: 25%;"><input type="text" name="nomPerso1" placeholder="Personnage principal" required></td>
+													<td style="width: 1%;"></td>
+													<td style="width: 64%;"><input type="text" name="rolePerso1" placeholder="rôle" required></td>
+													<td></td>
 												</tr>
 											</table>
 										</td>
 									</tr>
 									<tr>
 										<td></td>
-										<td colspan="2"><input type="button" value="+" onclick="ajout_perso()" style="margin: 10px; margin-left: 30px;" /></td>
+										<td colspan="3"><span class="fa fa-plus" onclick="ajout_perso()" style="margin-bottom: 20px; margin-left: 30px;" /></td>
 									</tr>
 									<tr>
-										<td style="font-weight: bold;">Résumé :</td>
-										<td colspan="2"><textarea type="text" name="resume" required/></textarea></td>
+										<td class="form_col1">Résumé :</td>
+										<td colspan="3"><textarea type="text" name="resume" required/></textarea></td>
 									</tr>
 				                    <tr>
 				                        <td colspan="3"><input type="submit" value="Valider"/></td>
@@ -291,8 +295,17 @@ function ajout_oeuvre() {
 	    var row = table.insertRow(-1);
 	    var cell1 = row.insertCell(0);
 	    var cell2 = row.insertCell(1);
-	    cell1.innerHTML = `<input type='text' name='nomPerso${num}' placeholder='nom'>`;
-	    cell2.innerHTML = `<input type='text' name='rolePerso${num}' placeholder='rôle'>`;
+	    var cell3 = row.insertCell(2);
+	    var cell4 = row.insertCell(3);
+	    cell1.innerHTML = `<input type='text' name='nomPerso${num}' placeholder='Autre personnage'>`;
+	    cell2.innerHTML = ``;
+	    cell3.innerHTML = `<input type='text' name='rolePerso${num}' placeholder='rôle'>`;
+	    cell4.innerHTML = `<p style="text-align: center;"><span class="fa fa-times" onclick="suppr_perso()" style="width: 20px; vertical-align: middle;"></span></p>`;
 	    num++;
+	}
+	function suppr_perso() {
+	    num--;
+		var table = document.getElementById("persos");
+	    var row = table.deleteRow(-1);
 	}
 </script>

@@ -1,4 +1,28 @@
 <?php
+
+function oeuvres_proposes($type) {
+	try
+	{
+		$bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
+	}
+	catch(Exception $e)
+	{
+	    die('Erreur : '.$e->getMessage());
+	}
+
+	$reponse = $bdd->prepare('SELECT DISTINCT style FROM oeuvres WHERE type = ? ORDER BY style');
+	$reponse->execute(array($type));
+
+	$liste_styles = "<ul>";
+	while($donnees = $reponse->fetch()) {
+		$liste_styles .= "<li style=\"margin-left: 40px;\">" . $donnees['style'] . "</li>";
+	}
+	$liste_styles .= "</ul>";
+
+	$reponse->closeCursor();
+	echo $liste_styles;
+}
+
 function oeuvre($type, $style) {
 	try
 	{
@@ -36,14 +60,10 @@ function oeuvre($type, $style) {
 				<p>" . $donnees['resume'] . "</p>
 			</section>
 			";
-			/*
-			couper les personnages aux §
-			mettre § après tous les persos et split pour avoir un tableau
-			afficher tableau
-			*/
 	}
 
 	$reponse->closeCursor();
 	echo $oeuvre;
 }
+
 ?>
