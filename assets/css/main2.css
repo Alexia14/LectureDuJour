@@ -92,6 +92,9 @@ input, select {
 .oeuvre p {
 	margin: 0;
 }
+.oeuvre p::first-letter {
+	text-transform: uppercase;
+}
 
 .titre {
 	font-size: 35px;
@@ -113,16 +116,3 @@ input, select {
 	font-weight: bold;
 }
 
-
-.quotation1 {
-	background-image: url('../../images/quotation1.png');
-	background-size: 40px;
-	background-repeat: no-repeat;
-	opacity: 0.5;
-}
-.quotation2 {
-	background-image: url('../../images/quotation2.png');
-	background-size: 40px;
-	background-repeat: no-repeat;
-	opacity: 0.5;
-}
