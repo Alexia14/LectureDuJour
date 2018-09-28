@@ -83,22 +83,22 @@
 					</header>
 					<div class="row gtr-25">
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic10.jpg" alt="" /></a>
 						</div>
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic11.jpg" alt="" /></a>
 						</div>
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic12.jpg" alt="" /></a>
 						</div>
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic13.jpg" alt="" /></a>
 						</div>
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic14.jpg" alt="" /></a>
 						</div>
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic15.jpg" alt="" /></a>
 						</div>
 					</div>
 				</section>

@@ -114,19 +114,18 @@ function ajout_oeuvre() {
 					<div class="container">
 						<article id="main" class="special">
 							<header>
-								<h2>Une nouvelle lecture à partager ?</h2>
-								<img src="/LectureDuJour/images/partage.jpg" alt="Partage de lecture" style="border: solid #df7366 2px; box-shadow: 5px 10px 8px #888888; margin-bottom: 25px;">
+								<h2 style="color: #df7366; margin-bottom: 60px;">Une nouvelle lecture à partager ?</h2>
 							</header>
 							
 							<form method="post">
 								<table class="newLivre">
 									<tr>
 										<td class="form_col1">Titre :</td>
-										<td colspan="3"><input type="text" name="titre" required/></td>
+										<td colspan="3"><input type="text" name="titre" placeholder="Titre" required/></td>
 									</tr>
 									<tr>
 										<td class="form_col1">Auteur :</td>
-										<td colspan="3"><input type="text" name="auteur" required/></td>
+										<td colspan="3"><input type="text" name="auteur" placeholder="Auteur" required/></td>
 									</tr>
 									<tr>
 										<td class="form_col1">Style :</td>
@@ -171,7 +170,7 @@ function ajout_oeuvre() {
 									</tr>
 									<tr>
 										<td class="form_col1">Nationalité :</td>
-										<td colspan="3"><input type="text" name="nationalite"/></td>
+										<td colspan="3"><input type="text" name="nationalite" placeholder="Nationalité"/></td>
 									</tr>
 									<tr>
 										<td class="form_col1">Date de parution :</td>
@@ -214,7 +213,7 @@ function ajout_oeuvre() {
 									</tr>
 									<tr>
 										<td class="form_col1">Résumé :</td>
-										<td colspan="3"><textarea type="text" name="resume" required/></textarea></td>
+										<td colspan="3"><textarea type="text" name="resume" placeholder="Résumé" required/></textarea></td>
 									</tr>
 				                    <tr>
 				                        <td colspan="3"><input type="submit" value="Valider"/></td>
