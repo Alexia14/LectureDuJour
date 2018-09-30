@@ -1,11 +1,17 @@
+<div class="retour_top" style="display: block;">
+    <span class="fa fa-chevron-circle-up" onclick="haut_de_page()" style="font-size: 45px; color: #df7366;"/>
+</div>
+
 <div id="footer">
 	<div class="container">
+        <!--
 		<div class="row">
-
+        -->
 			<!-- Tweets -->
+            <!--
 				<section class="col-4 col-12-mobile">
 					<header>
-						<h2 class="icon fa-twitter circled"><span class="label">Tweets</span></h2>
+						<h2 class="icon fa-address-card circled"><span class="label">Contact</span></h2>
 					</header>
 					<ul class="divided">
 						<li>
@@ -34,8 +40,9 @@
 						</li>
 					</ul>
 				</section>
-
+            -->
 			<!-- Posts -->
+            <!--
 				<section class="col-4 col-12-mobile">
 					<header>
 						<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
@@ -75,45 +82,62 @@
 						</li>
 					</ul>
 				</section>
-
+            -->
 			<!-- Photos -->
+            <!--
 				<section class="col-4 col-12-mobile">
 					<header>
-						<h2 class="icon fa-camera circled"><span class="label">Photos</span></h2>
+						<h2 class="icon fa-book circled"><span class="label">Oeuvres</span></h2>
 					</header>
 					<div class="row gtr-25">
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic10.jpg" alt="" /></a>
+                            <a href="/LectureDuJour/pages/novel.php" class="image fit">
+                                <img src="/LectureDuJour/images/roman.jpg" alt="Roman" />
+                                <div class="overlay">
+                                    <div class="overlay_text">Roman</div>
+                                </div>
+                            </a>
+                        </div>
+						<div class="col-6">
+							<a href="/LectureDuJour/pages/theater.php" class="image fit">
+                                <img src="/LectureDuJour/images/théatre.jpg" alt="Théâtre" />
+                                <div class="overlay">
+                                    <div class="overlay_text">Théâtre</div>
+                                </div>
+                            </a>
 						</div>
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic11.jpg" alt="" /></a>
+							<a href="/LectureDuJour/pages/youth.php" class="image fit">
+                                <img src="/LectureDuJour/images/jeunesse.jpg" alt="Jeunesse" />
+                                <div class="overlay">
+                                    <div class="overlay_text">Jeunesse</div>
+                                </div>
+                            </a>
 						</div>
 						<div class="col-6">
-							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic12.jpg" alt="" /></a>
-						</div>
-						<div class="col-6">
-							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic13.jpg" alt="" /></a>
-						</div>
-						<div class="col-6">
-							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic14.jpg" alt="" /></a>
-						</div>
-						<div class="col-6">
-							<a href="#" class="image fit"><img src="/LectureDuJour/images/pic15.jpg" alt="" /></a>
+							<a href="/LectureDuJour/pages/comic.php" class="image fit">
+                                <img src="/LectureDuJour/images/BD.jpg" alt="BD" />
+                                <div class="overlay">
+                                    <div class="overlay_text">BD</div>
+                                </div>
+                            </a>
 						</div>
 					</div>
-				</section>
-
+                </section>
+            -->
+        <!--
 		</div>
-		<hr />
+
+		<hr/>
+		-->
 		<div class="row">
 			<div class="col-12">
 
 				<!-- Contact -->
 					<section class="contact">
 						<header>
-							<h3>Nisl turpis nascetur interdum?</h3>
+							<h3>Retrouvez-moi ici</h3>
 						</header>
-						<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
@@ -127,7 +151,7 @@
 				<!-- Copyright -->
 					<div class="copyright">
 						<ul class="menu">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; LectureDuJour. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
@@ -136,3 +160,22 @@
 		</div>
 	</div>
 </div>
+
+<script>
+    function haut_de_page() {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 'slow');
+    }
+
+    document.getElementsByClassName(`retour_top`).style.display = "none";  // d'abord, on masque le deuxième menu de navigation, qui porte la classe "navigation2"
+    $(function(){
+        $(window).scroll(() => { //Au scroll dans la fenetre on déclenche la fonction
+            if ($(this).scrollTop() > hauteur) { //si on a défile de plus de XXX (variable "hauteur) pixels du haut vers le bas
+                document.getElementsByClassName(`retour_top`).style.display = "block";
+            } else {
+                document.getElementsByClassName(`retour_top`).style.display = "none";
+            }
+        });
+    });
+</script>

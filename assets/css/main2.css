@@ -69,6 +69,44 @@
 }
 
 
+/* footer */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #df7366;
+}
+.overlay:hover {
+    opacity: 0.5;
+}
+.overlay_text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.retour_top {
+    bottom: 100px;
+    right: 70px;
+    position: fixed;
+    z-index: 1;
+}
+
+
 /* new_reading + connexion */
 
 .formulaire > tbody > tr > td > div > input[type="radio"] {
@@ -91,13 +129,6 @@ input, select {
 .block_style_livre {
 	display: none;
 	margin: 20px;
-}
-.fa-plus:before, .fa-times:before, .fa-edit:before, .fa-bars:before {
-	font-size: 25px;
-	color: #df7366;
-}
-.fa:hover {
-	cursor: pointer;
 }
 
 
@@ -135,3 +166,12 @@ input, select {
 	font-weight: bold;
 }
 
+/* icons */
+
+.fa-plus:before, .fa-times:before, .fa-edit:before, .fa-bars:before {
+    font-size: 25px;
+    color: #df7366;
+}
+.fa:hover {
+    cursor: pointer;
+}
