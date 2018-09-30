@@ -16,9 +16,8 @@ if (isset($_POST) and !empty($_POST)) {
 		'titre' => $_POST['titre'],
 		'auteur' => $_POST['auteur']
 		));
-	$nb_existant = $deja_existant->fetch();
 
-	if ($nb_existant == null) {
+	if ($deja_existant->fetch() == null) {
 		ajout_oeuvre();
 	}
 	else echo "<script>alert('L\'oeuvre saisie existe déjà');</script>";
@@ -118,17 +117,17 @@ function ajout_oeuvre() {
 							</header>
 							
 							<form method="post">
-								<table class="newLivre">
+								<table class="formulaire">
 									<tr>
-										<td class="form_col1">Titre :</td>
+										<td class="form_col1">Titre<span style="color: red">*</span> :</td>
 										<td colspan="3"><input type="text" name="titre" placeholder="Titre" required/></td>
 									</tr>
 									<tr>
-										<td class="form_col1">Auteur :</td>
+										<td class="form_col1">Auteur<span style="color: red">*</span> :</td>
 										<td colspan="3"><input type="text" name="auteur" placeholder="Auteur" required/></td>
 									</tr>
 									<tr>
-										<td class="form_col1">Style :</td>
+										<td class="form_col1">Style<span style="color: red">*</span> :</td>
 										<td colspan="3">
 											<select name="type" onchange="style_livre(this.value)">
 												<option>-- sélectionner --</option>
@@ -173,7 +172,7 @@ function ajout_oeuvre() {
 										<td colspan="3"><input type="text" name="nationalite" placeholder="Nationalité"/></td>
 									</tr>
 									<tr>
-										<td class="form_col1">Date de parution :</td>
+										<td class="form_col1">Date de parution<span style="color: red">*</span> :</td>
 										<td style="width: 20%;">
 											<select name="mois">
 												<option>-- mois --</option>
@@ -195,7 +194,7 @@ function ajout_oeuvre() {
 										<td><input type="number" name="annee" min="1" max="2020" placeholder="année (aaaa)" required/></td>
 									</tr>
 									<tr>
-										<td class="form_col1">Personnages :</td>
+										<td class="form_col1">Personnages<span style="color: red">*</span> :</td>
 										<td colspan="3">
 											<table id="persos" style="margin-bottom: 0; margin-top: 50px;">
 												<tr>
@@ -212,7 +211,7 @@ function ajout_oeuvre() {
 										<td colspan="3"><span class="fa fa-plus" onclick="ajout_perso()" style="margin-bottom: 20px; margin-left: 30px;" /></td>
 									</tr>
 									<tr>
-										<td class="form_col1">Résumé :</td>
+										<td class="form_col1">Résumé<span style="color: red">*</span> :</td>
 										<td colspan="3"><textarea type="text" name="resume" placeholder="Résumé" required/></textarea></td>
 									</tr>
 				                    <tr>
@@ -299,7 +298,7 @@ function ajout_oeuvre() {
 	    cell1.innerHTML = `<input type='text' name='nomPerso${num}' placeholder='Autre personnage'>`;
 	    cell2.innerHTML = ``;
 	    cell3.innerHTML = `<input type='text' name='rolePerso${num}' placeholder='rôle'>`;
-	    cell4.innerHTML = `<p style="text-align: center;"><span class="fa fa-times" onclick="suppr_perso()" style="width: 20px; vertical-align: middle;"></span></p>`;
+	    cell4.innerHTML = `<p style='text-align: center;'><span class='fa fa-times' onclick='suppr_perso()' style='width: 20px; vertical-align: middle;'></span></p>`;
 	    num++;
 	}
 	function suppr_perso() {

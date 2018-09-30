@@ -49,14 +49,33 @@
 	transform: translateX(0px);
 }
 
+#second_nav {
+	border: 2px solid #df7366;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 10px 8px #888888;
+	padding: 20px;
+	margin: 20px;
+    color: black;
+    text-align: left;
+	text-decoration: none;
+	background-color: white;
+    z-index: 1;
+}
+#second_nav ul, #second_nav li {
+    list-style: none;
+}
+#second_nav a {
+	border-bottom: none;
+}
 
-/* new_reading */
 
-.newLivre > tbody > tr > td > div > input[type="radio"] {
+/* new_reading + connexion */
+
+.formulaire > tbody > tr > td > div > input[type="radio"] {
 	-webkit-appearance: radio;
 	width: 5%;
 }
-.newLivre > tbody > tr > td > div > div > input[type="radio"] {
+.formulaire > tbody > tr > td > div > div > input[type="radio"] {
 	-webkit-appearance: radio;
 	width: 5%;
 }
@@ -73,8 +92,8 @@ input, select {
 	display: none;
 	margin: 20px;
 }
-.fa-plus:before, .fa-times:before {
-	font-size: 30px;
+.fa-plus:before, .fa-times:before, .fa-edit:before, .fa-bars:before {
+	font-size: 25px;
 	color: #df7366;
 }
 .fa:hover {

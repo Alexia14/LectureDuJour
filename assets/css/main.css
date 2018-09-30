@@ -1951,6 +1951,7 @@ input, select, textarea {
 	form input[type="email"],
 	form input[type="password"],
 	form input[type="number"],
+	form input[type="date"],
 	form select,
 	form textarea {
 		-webkit-appearance: none;
@@ -1971,6 +1972,7 @@ input, select, textarea {
 		form input[type="email"]:focus,
 		form input[type="password"]:focus,
 		form input[type="number"]:focus,
+		form input[type="date"]:focus,
 		form select:focus,
 		form textarea:focus {
 			background: #fff;
@@ -1981,6 +1983,7 @@ input, select, textarea {
 	form input[type="email"],
 	form input[type="password"],
 	form input[type="number"],
+	form input[type="date"],
 	form select {
 		line-height: 1em;
 	}
