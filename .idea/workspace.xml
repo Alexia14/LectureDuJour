@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="307ac5d6-af18-4364-92b9-eb688a2c515d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/literary_work.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/comic.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/comic/cartoon.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comic/cartoon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/comic/fantastic.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comic/fantastic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/display_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/display_book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_reading.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_reading.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/novel.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/novel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/novel/autobiography.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/novel/autobiography.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/novel/detective.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/novel/detective.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/novel/literature.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/novel/literature.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/search_reading.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/theater.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/theater.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/theater/absurd.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/theater/absurd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/theater/comedy.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/theater/comedy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/youth.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/youth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/youth/fiction.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/youth/fiction.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +28,7 @@
         <counts>
           <entry key="css" value="1186" />
           <entry key="php" value="8977" />
-          <entry key="txt" value="177" />
+          <entry key="txt" value="242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -52,7 +36,7 @@
           <entry key="CSS" value="1186" />
           <entry key="HTML" value="40" />
           <entry key="PHP" value="8932" />
-          <entry key="PLAIN_TEXT" value="177" />
+          <entry key="PLAIN_TEXT" value="242" />
           <entry key="SQL" value="5" />
         </counts>
       </usages-collector>
@@ -84,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/literary_work.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="107" column="132" selection-start-line="107" selection-start-column="132" selection-end-line="107" selection-end-column="132" />
+            <state relative-caret-position="238">
+              <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -331,7 +315,7 @@
       <workItem from="1538252903317" duration="601000" />
       <workItem from="1538303560254" duration="18276000" />
       <workItem from="1538339950488" duration="3253000" />
-      <workItem from="1538397145134" duration="14974000" />
+      <workItem from="1538397145134" duration="15868000" />
     </task>
     <task id="LOCAL-00001" summary="nav + pages structure + CSS">
       <created>1538086939691</created>
@@ -403,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538403525159</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="form precise search in each page + automatic author">
+      <created>1538417378328</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1538417378328</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65407000" />
+    <option name="totallyTimeSpent" value="66301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -450,7 +441,8 @@
     <MESSAGE value="modif nav" />
     <MESSAGE value="file search_reading" />
     <MESSAGE value="css update + improvement" />
-    <option name="LAST_COMMIT_MESSAGE" value="css update + improvement" />
+    <MESSAGE value="form precise search in each page + automatic author" />
+    <option name="LAST_COMMIT_MESSAGE" value="form precise search in each page + automatic author" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
@@ -635,8 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/literary_work.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="107" column="132" selection-start-line="107" selection-start-column="132" selection-end-line="107" selection-end-column="132" />
+        <state relative-caret-position="238">
+          <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
         </state>
       </provider>
     </entry>
