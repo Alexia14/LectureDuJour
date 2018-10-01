@@ -2,7 +2,7 @@
 	<ul>
 		<li><a href="/LectureDuJour/index.php">Accueil</a></li>
 		<li>
-			<a href="/LectureDuJour/pages/search_reading.php">Oeuvres</a>
+			<a href="/LectureDuJour/pages/literary_work.php">Oeuvres</a>
 			<ul>
 				<li>
 					<a href="/LectureDuJour/pages/novel.php">Roman</a>
@@ -36,7 +36,7 @@
 				</li>
 			</ul>
 		</li>
-		<li><a href="/LectureDuJour/pages/search_reading.php">Rechercher</a></li>
+		<li><a href="/LectureDuJour/pages/literary_work.php">Rechercher</a></li>
 		<li><a href="/LectureDuJour/pages/new_reading.php">Nouvelle saisie</a></li>
 		<li><a href="/LectureDuJour/pages/connect.php">Connexion</a></li>
 	</ul>
@@ -48,7 +48,7 @@
     <ul id="main_part" style="display: none;">
         <li><a href="/LectureDuJour/index.php">Accueil</a></li>
         <li>
-            <a href="/LectureDuJour/pages/search_reading.php">Oeuvres</a>
+            <a href="/LectureDuJour/pages/literary_work.php">Oeuvres</a>
             <ul>
                 <li>
                     <a href="/LectureDuJour/pages/novel.php">Roman</a>
@@ -82,7 +82,7 @@
                 </li>
             </ul>
         </li>
-        <li><a href="/LectureDuJour/pages/search_reading.php">Rechercher</a></li>
+        <li><a href="/LectureDuJour/pages/literary_work.php">Rechercher</a></li>
         <li><a href="/LectureDuJour/pages/new_reading.php">Nouvelle saisie</a></li>
         <li><a href="/LectureDuJour/pages/connect.php">Connexion</a></li>
     </ul>

@@ -75,6 +75,7 @@ function citation() {
 				</div>
 
 			<!-- Main -->
+            <?php include('../display_book.php') ?>
 				<div class="wrapper style1">
 
 					<div class="container">
@@ -88,8 +89,6 @@ function citation() {
 										</p>
 									</header>
                                     <div class="image_genre_style"><img src="/LectureDuJour/images/smurf.jpg" alt="Schtroumpf à Lunettes"/></div>
-									<?php include('../display_book.php') ?>
-									<?php oeuvre('BD', 'Humoristique'); ?>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
@@ -107,19 +106,16 @@ function citation() {
 										<a href="https://fr.wikipedia.org/wiki/Bande_dessin%C3%A9e_humoristique" class="button">Lire plus</a>
 									</footer>
 								</section>
-								<hr />
-								<section>
-									<header>
-										<h3>Affinez votre choix</h3>
-									</header>
-									<p>affinage</p>
-									<footer>
-										<a href="#" class="button">Magna Adipiscing</a>
-									</footer>
-								</section>
-							</div>
-						</div>
-						<hr />
+                                <hr />
+                                <section>
+                                    <?php style_research('BD', 'Humoristique'); ?>
+                                </section>
+                            </div>
+                        </div>
+                        <div>
+                            <?php oeuvre('BD', 'Humoristique'); ?>
+                        </div>
+                        <hr />
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
 								<a href="#" class="image featured"><img src="/LectureDuJour/images/pic07.jpg" alt="" /></a>

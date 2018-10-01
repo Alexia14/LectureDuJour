@@ -98,9 +98,6 @@ function citation() {
 											<?php oeuvres_proposes('Jeunesse'); ?>
 										</p>
 									</section>
-									<section>
-										
-									</section>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile" id="sidebar">
@@ -125,18 +122,16 @@ function citation() {
 									</footer>
 								</section>
 								<hr />
-								<section>
-									<header>
-										<h3>Affinez votre choix</h3>
-									</header>
-									<p>affinage</p>
-									<footer>
-										<a href="#" class="button">Magna Adipiscing</a>
-									</footer>
-								</section>
+                                <section>
+                                    <?php pages_research('Jeunesse'); ?>
+                                </section>
 							</div>
 						</div>
 						<hr />
+                        <div>
+
+                        </div>
+                        <hr/>
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
 								<a href="#" class="image featured"><img src="/LectureDuJour/images/pic07.jpg" alt="" /></a>

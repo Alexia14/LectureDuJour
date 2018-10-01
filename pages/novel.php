@@ -90,6 +90,7 @@ function citation() {
 				</div>
 
 			<!-- Main -->
+            <?php include('display_book.php') ?>
 				<div class="wrapper style1">
 
 					<div class="container">
@@ -103,18 +104,13 @@ function citation() {
 										</p>
 									</header>
                                     <div class="image_genre_style"><img src="/LectureDuJour/images/roman.jpg" alt="Âme du lecteur"/></div>
-									<hr />
 									<section>
 										<p>
 											Vous vous trouvez ici dans la catégorie des romans. De façon générale, un roman est un récit en prose de longueur variable.
 											<br />
 											Vous pouvez toruver plusieurs sortes de romans différents. Les styles romanesques présentés dans cette section sont les suivants :
-											<?php include('display_book.php') ?>
 											<?php oeuvres_proposes('Roman'); ?>
 										</p>
-									</section>
-									<section>
-										
 									</section>
 								</article>
 							</div>
@@ -135,16 +131,14 @@ function citation() {
 								</section>
 								<hr />
 								<section>
-									<header>
-										<h3>Affinez votre choix</h3>
-									</header>
-									<p>affinage</p>
-									<footer>
-										<a href="#" class="button">Magna Adipiscing</a>
-									</footer>
+									<?php pages_research('Roman'); ?>
 								</section>
 							</div>
 						</div>
+                        <hr/>
+                        <div>
+
+                        </div>
 						<hr />
 						<div class="row">
 							<article class="col-4 col-12-mobile special">

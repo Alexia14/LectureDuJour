@@ -138,7 +138,7 @@ function ajout_oeuvre() {
 											</select>
 
 											<div id="blockRoman" class="block_style_livre">
-												<input type="radio" name="style" value="Autobiographique">Autobiographique
+												<input type="radio" name="style" value="Autobiographique">Autobiographie
 												<input type="radio" name="style" value="Littéraire">Littéraire
 												<input type="radio" name="style" value="Policier">Policier
 												<div style="display: flex;">

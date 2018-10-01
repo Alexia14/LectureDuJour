@@ -192,8 +192,13 @@ input, select {
 	text-align: center;
 }
 .image_genre_style img {
-	width: 650px;
+	max-width: 600px;
 	box-shadow: 5px 10px 8px #888888;
 	border-radius: 15px;
 	text-align: center;
+}
+@media (max-width: 1000px) {
+	.image_genre_style img {
+		max-width: 100%;
+	}
 }

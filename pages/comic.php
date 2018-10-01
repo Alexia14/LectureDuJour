@@ -93,7 +93,6 @@ function citation() {
 										</p>
 									</header>
                                     <div class="image_genre_style"><img src="/LectureDuJour/images/BD.jpg" alt="Bande dessinée"/></div>
-									<hr />
 									<section>
 										<p>
 											Vous vous trouvez ici dans la catégorie des bandes dessinées.
@@ -102,9 +101,6 @@ function citation() {
 											<?php include('display_book.php') ?>
 											<?php oeuvres_proposes('BD'); ?>
 										</p>
-									</section>
-									<section>
-										
 									</section>
 								</article>
 							</div>
@@ -125,18 +121,16 @@ function citation() {
 									</footer>
 								</section>
 								<hr />
-								<section>
-									<header>
-										<h3>Affinez votre choix</h3>
-									</header>
-									<p>affinage</p>
-									<footer>
-										<a href="#" class="button">Magna Adipiscing</a>
-									</footer>
-								</section>
+                                <section>
+                                    <?php pages_research('BD'); ?>
+                                </section>
 							</div>
 						</div>
 						<hr />
+                        <div>
+
+                        </div>
+                        <hr />
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
 								<a href="#" class="image featured"><img src="/LectureDuJour/images/pic07.jpg" alt="" /></a>
