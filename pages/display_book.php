@@ -1,6 +1,6 @@
 <?php
 
-function oeuvres_proposes($type) {
+function oeuvres_proposes($genre) {
 	try
 	{
 		$bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
@@ -10,7 +10,7 @@ function oeuvres_proposes($type) {
 	    die('Erreur : '.$e->getMessage());
 	}
 
-	$reponse = $bdd->prepare('SELECT DISTINCT style FROM oeuvres WHERE type = ? ORDER BY style');
+	$reponse = $bdd->prepare('SELECT DISTINCT style FROM oeuvres WHERE genre = ? ORDER BY style');
 	$reponse->execute(array($genre));
 
 	$liste_styles = "<ul>";
@@ -33,7 +33,7 @@ function oeuvre($genre, $style) {
 	    die('Erreur : '.$e->getMessage());
 	}
 
-	$reponse = $bdd->prepare('SELECT * FROM oeuvres WHERE type = ? AND style = ? ORDER BY auteur');
+	$reponse = $bdd->prepare('SELECT * FROM oeuvres WHERE genre = ? AND style = ? ORDER BY auteur');
 	$reponse->execute(array($genre, $style));
 
 	$oeuvre = "";

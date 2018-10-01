@@ -1,56 +1,56 @@
 <?php
 function citation() {
 	$citation = rand(1, 10);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "Un texte de théâtre est à voir. Un texte de théâtre est à écouter. Est-ce qu'un texte de théâtre est à lire ?
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Francis Huster</i>";
 			break;
 		case 2:
 			echo "Le théâtre est une tribune. Le théâtre est une chaire. Le théâtre parle fort et parle haut.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Victor Hugo</i>";
 			break;
 		case 3:
 			echo "Ceux qui veulent comprendre au théâtre sont ceux qui ne comprennent pas le théâtre.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jean Giraudoux</i>";
 			break;
 		case 4:
 			echo "Un théâtre où on ne rit pas est un théâtre dont on doit rire.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Bertolt Brecht</i>";
 			break;
 		case 5:
 			echo "L'essentiel du théâtre n'est pas l'auteur, mais le théâtre.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jean Giraudoux</i>";
 			break;
 		case 6:
 			echo "Nous voulons de la vie au théâtre, et du théâtre dans la vie.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jules Renard</i>";
 			break;
 		case 7:
 			echo "Le théâtre est une nourriture aussi indispensable à la vie que le pain et le vin... Le théâtre est donc, au premier chef, un service public. Tout comme le gaz, l'eau, l'électricité.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jean Vilar</i>";
 			break;
 		case 8:
 			echo "Le théâtre, c'est la générosité, le cinéma, c'est l'avarice. La caméra vient nous chercher, il faut tout garder. Le théâtre est le véritable espace d'expression du comédien.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>George Cukor</i>";
 			break;
 		case 9:
 			echo "L'attitude d'un auteur, quand il écrit pour le théâtre, doit être affective avant d'être intellectuelle car tout le théâtre s'adresse à l'émotion avant tout.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Charlie Chaplin</i>";
 			break;
 		case 10:
 			echo "Jouer à l’opéra est plus facile que jouer au théâtre, car la musique est déjà écrite, alors qu’au théâtre il faut composer sa partition soi-même.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Natalie Dessay</i>";
 			break;
 		default:
@@ -107,7 +107,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/théatre.jpg" alt="Théâtre" style="width: 600px; box-shadow: 5px 10px 8px #888888" /></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/théatre.jpg" alt="Théâtre"/></div>
 									<hr />
 									<section>
 										<p>

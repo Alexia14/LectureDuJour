@@ -1,56 +1,56 @@
 <?php
 function citation() {
 	$citation = rand(1, 10);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "Littérature populaire ne signifie pas littérature lue par le peuple, c’est une littérature qui se doit de fournir en premier lieu une lecture pour le plus grand nombre de gens possible.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jean-Bernard Pouy</i>";
 			break;
 		case 2:
 			echo "Il n’y a pas d’heure pour la littérature ; la littérature n’est jamais à l’heure.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Bernard-Henri Lévy</i>";
 			break;
 		case 3:
 			echo "La littérature est le chant du cœur du peuple et le peuple est l'âme de la littérature.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jiang Zilong</i>";
 			break;
 		case 4:
 			echo "La différence entre littérature et journalisme, c'est que le journalisme est illisible et que la littérature n'est pas lue.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Oscar Wilde</i>";
 			break;
 		case 5:
 			echo "On aimerait à savoir si c'est la littérature qui corrompt les moeurs ou les moeurs au contraire qui corrompent la littérature.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Alfred Capus</i>";
 			break;
 		case 6:
 			echo "La vie est la source de la littérature et la littérature doit être fidèle à la vie.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Gao Xingjian</i>";
 			break;
 		case 7:
 			echo "Littérature populaire ne signifie pas littérature lue par le peuple, c’est une littérature qui se doit de fournir en premier lieu une lecture pour le plus grand nombre de gens possible.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jean-Bernard Pouy</i>";
 			break;
 		case 8:
 			echo "Si Dieu existe, à quoi bon la littérature ? Si Dieu n'existe pas, alors à quoi bon faire de la littérature ?
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Eugène Ionesco</i>";
 			break;
 		case 9:
 			echo "Le cinéma se nourrit de littérature, et la littérature se nourrit de tout, notamment de cinéma.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Martin Page</i>";
 			break;
 		case 10:
 			echo "La littérature ne change ni l'homme ni la société. Pour autant, l'absence de littérature rendrait l'homme encore plus infréquentable.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Tahar Ben Jelloun</i>";
 			break;
 		default:
@@ -107,7 +107,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/littérature.jpg" alt="Littérature" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/littérature.jpg" alt="Littérature"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('Roman', 'Littérature'); ?>
 								</article>

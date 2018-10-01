@@ -1,41 +1,41 @@
 <?php
 function citation() {
 	$citation = rand(1, 7);
-	echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+	echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\" />";
 	switch ($citation) {
 		case 1:
 			echo "La bande dessinée c’est l’évasion.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Grzegorz Rosinski</i>";
 			break;
 		case 2:
 			echo "Faire de la bande dessinée, c’est comme voir ses rêves.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Chris Ware</i>";
 			break;
 		case 3:
 			echo "Les bandes dessinées ne seront jamais aussi tarées que ceux qui aiment ça.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Georges Wolinski</i>";
 			break;
 		case 4:
 			echo "Faire une bande dessinée, c’est se souvenir.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Chris Ware</i>";
 			break;
 		case 5:
 			echo "Il y a toujours un peu de l'auteur dans un personnage... Pourtant Astérix adore le sanglier, moi, j'ai horreur de ça !
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>René Goscinny</i>";
 			break;
 		case 6:
 			echo "La seule chose que nous ayons à craindre, c'est que le ciel nous tombe sur la tête !
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>René Goscinny</i>";
 			break;
 		case 7:
 			echo "Comme on dit «il faut rendre à César ce qui appartient à César», j'ai envie de dire: «Il faut rendre Astérix à ses lecteurs. Car c'est à eux qu'il appartient... Et pas à moi.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Albert Uderzo</i>";
 			break;
 		default:
@@ -92,7 +92,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/BD.jpg" alt="Bande dessinée" style="width: 700px; box-shadow: 5px 10px 8px #888888" /></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/BD.jpg" alt="Bande dessinée"/></div>
 									<hr />
 									<section>
 										<p>

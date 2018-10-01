@@ -1,31 +1,31 @@
 <?php
 function citation() {
 	$citation = rand(1, 5);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "Nous naissons tous fous. Quelques-uns le demeurent.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Samuel Beckett</i>";
 			break;
 		case 2:
 			echo "Je ne sais pas qui est Godot. Je ne sais même pas s'il existe.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Samuel Beckett</i>";
 			break;
 		case 3:
 			echo "Se donner du mal pour les petites choses, c’est parvenir aux grandes, avec le temps.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Samuel Beckett</i>";
 			break;
 		case 4:
 			echo "Les racines des mots sont-elles carrées ?
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Eugène Ionesco</i>";
 			break;
 		case 5:
 			echo "Fini, c'est fini, ça va finir, ça va peut-être finir. Les grains s'ajoutent aux grains, un à un, et un jour, soudain, c'est un tas, un petit tas, l'impossible tas.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Fin de partie, Samuel Beckett</i>";
 			break;
 		default:
@@ -82,7 +82,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/absurde.jpg" alt="Théatre" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/absurde.jpg" alt="Théatre"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('Théâtre', 'Absurde'); ?>
 								</article>

@@ -1,36 +1,36 @@
 <?php
 function citation() {
 	$citation = rand(1, 6);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\" />";
     switch ($citation) {
 		case 1:
 			echo "La lecture est une amitié.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\" />
 				<br /><i>Marcel Proust</i>";
 			break;
 		case 2:
 			echo "Une lecture m'émeut plus qu'un malheur réel.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\" />
 				<br /><i>Gustave Flaubert</i>";
 			break;
 		case 3:
 			echo "Une heure de lecture est le souverain remède contre les dégoûts de la vie.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\" />
 				<br /><i>Montesquieu</i>";
 			break;
 		case 4:
 			echo "La lecture est à l'esprit ce que l'exercice est au corps.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\" />
 				<br /><i>J. Addison</i>";
 			break;
 		case 5:
 			echo "Les citations sont à la lecture ce que les bandes annonces sont au cinéma...
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\" />
 				<br /><i>Franck Dunand</i>";
 			break;
 		case 6:
 			echo "Ce sont nos choix qui montrent ce que nous sommes vraiment, beaucoup plus que nos aptitudes.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\" />
 				<br /><i>Harry Potter et la chambre des secrets, Joanne K. Rowling</i>";
 			break;
 		default:
@@ -87,7 +87,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/jeunesse.jpg" alt="Lecture jeunesse" style="width: 600px; box-shadow: 5px 10px 8px #888888" /></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/jeunesse.jpg" alt="Lecture jeunesse"/></div>
 									<hr />
 									<section>
 										<p>

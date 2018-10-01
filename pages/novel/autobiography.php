@@ -1,46 +1,46 @@
 <?php
 function citation() {
 	$citation = rand(1, 8);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "Quand on écrit son autobiographie, on n'a pas le temps de vivre.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Robert Baillie</i>";
 			break;
 		case 2:
 			echo "Il est bien à plaindre celui qui ne vit pas sa vie, mais son autobiographie.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Arthur Schnitzler</i>";
 			break;
 		case 3:
 			echo "Une autobiographie révèle généralement que tout va très bien chez son auteur, sauf la mémoire.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Franklin P. Jones</i>";
 			break;
 		case 4:
 			echo "Une autobiographie sérieuse devrait commencer par une théorie de la mémoire.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Pierre Baillargeon</i>";
 			break;
 		case 5:
 			echo "Tout ce qu’un écrivain produit a sa part d’autobiographie, même s’il s’agit de science-fiction.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Antonio Soler</i>";
 			break;
 		case 6:
 			echo "L'autobiographie est encore le meilleur moyen qu'on ait trouvé pour dire toute la vérité à propos des autres.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Pierre Daninos</i>";
 			break;
 		case 7:
 			echo "Tous les livres sont autobiographiques. Sauf qu'on ne tient pas toujours à être reconnue.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Michèle Mailhot</i>";
 			break;
 		case 8:
 			echo "Les biographies se terminent généralement par la mort du sujet étudié, conclusion naturelle dont ne bénéficient pas les autobiographies.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Eric Hobsbawm</i>";
 			break;
 		default:
@@ -97,7 +97,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/autobiographie.jpg" alt="autobiographie" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/autobiographie.jpg" alt="autobiographie"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('Roman', 'Autobiographique'); ?>
 								</article>

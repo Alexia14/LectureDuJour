@@ -1,46 +1,46 @@
 <?php
 function citation() {
 	$citation = rand(1, 8);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "La fiction ne suffit pas à caractériser le roman, mais un certain rapport entre cette fiction et la réalité.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Louis Aragon</i>";
 			break;
 		case 2:
 			echo "La fiction, c’est la part de vérité qu’il existe en chaque mensonge.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Stephen King</i>";
 			break;
 		case 3:
 			echo "La mémoire est une fiction. Elle est comme une mosaïque, faite de tessons.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>José Carlos Llop</i>";
 			break;
 		case 4:
 			echo "Tout le réel pour moi n'est qu'une fiction.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Alfred de Musset</i>";
 			break;
 		case 5:
 			echo "La réalité dépasse la fiction mais les mensonges la dépassent bien plus encore.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Philip Roth</i>";
 			break;
 		case 6:
 			echo "Il y a une différence entre la fiction et le mensonge. La fiction est là pour elle-même, elle ne sert à rien, alors que le mensonge sert toujours à quelqu'un.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Micheline La France</i>";
 			break;
 		case 7:
 			echo "La vérité doit forcément être plus étrange que la fiction car la fiction n'est qu'une création de l'esprit humain et, par conséquent, est à sa mesure.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Gilbert Keith Chesterton</i>";
 			break;
 		case 8:
 			echo "La vérité est toujours plus surprenante que la fiction, parce que la fiction doit coller à ce qui est possible, alors que la vérité, elle, n’y est pas obligée.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Mark Twain</i>";
 			break;
 		default:
@@ -97,7 +97,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/fiction.png" alt="Roman de fiction jeunesse" style="width: 700px; background-color: #fbe4ce; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/fiction.png" alt="Roman de fiction jeunesse"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('Jeunesse', 'Fiction'); ?>
 								</article>

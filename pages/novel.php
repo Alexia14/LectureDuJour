@@ -1,51 +1,51 @@
 <?php
 function citation() {
 	$citation = rand(1, 9);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "Le roman est l'histoire du présent, tandis que l'histoire est le roman du passé.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Georges Duhamel</i>";
 			break;
 		case 2:
 			echo "L'histoire est un roman qui a été ; le roman est de l'histoire qui aurait pu être.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Edmond et Jules de Goncourt</i>";
 			break;
 		case 3:
 			echo "Un roman est un miroir qui se promène sur une grande route.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Stendhal</i>";
 			break;
 		case 4:
 			echo "L'art du roman est de savoir mentir.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Louis Aragon</i>";
 			break;
 		case 5:
 			echo "Excepté pour la passion du héros, un roman doit être un miroir.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Stendhal</i>";
 			break;
 		case 6:
 			echo "Le roman, c’est la clef des chambres interdites de notre maison.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Louis Aragon</i>";
 			break;
 		case 7:
 			echo "Chaque roman est un déicide secret, un assassinat symbolique de la réalité.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Mario Vargas Llosa</i>";
 			break;
 		case 8:
 			echo "Malheur à tout roman que le lecteur n'est pas pressé d'achever.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Jean le Rond d’Alembert</i>";
 			break;
 		case 9:
 			echo "Un roman est comme un archet, la caisse du violon qui rend les sons, c'est l'âme du lecteur.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Stendhal</i>";
 			break;
 		default:
@@ -102,7 +102,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/roman.jpg" alt="Âme du lecteur" style="width: 500px; box-shadow: 5px 10px 8px #888888" /></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/roman.jpg" alt="Âme du lecteur"/></div>
 									<hr />
 									<section>
 										<p>

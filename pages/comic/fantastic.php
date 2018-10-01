@@ -1,56 +1,56 @@
 <?php
 function citation() {
 	$citation = rand(1, 10);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 </i>";
 			break;
 		case 2:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 3:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 4:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 5:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 6:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 7:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 8:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 9:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		case 10:
 			echo "
-                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+                <img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
                 <br /><i></i>";
 			break;
 		default:
@@ -107,7 +107,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/autobiographie.jpg" alt="autobiographie" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/autobiographie.jpg" alt="autobiographie"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('BD', 'Fantastique'); ?>
 								</article>

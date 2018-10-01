@@ -1,51 +1,51 @@
 <?php
 function citation() {
 	$citation = rand(1, 9);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "La psychanalyse ressemble parfois à un roman policier.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Patrick Modiano</i>";
 			break;
 		case 2:
 			echo "Le cinéma policier, tout comme le roman policier, est le meilleur reflet de l'époque à laquelle il est tourné.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>François Guérif</i>";
 			break;
 		case 3:
 			echo "Rétrospectivement, il me semble que des épisodes de mon enfance ont ressemblé à un roman policier.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Patrick Modiano</i>";
 			break;
 		case 4:
 			echo "Dans un mauvais roman policier, le coupable n'est jamais loin, c'est l'auteur.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Robert Sabatier</i>";
 			break;
 		case 5:
 			echo "Le roman policier est-il un genre dans la littérature ou une façon d'écrire hors littérature ?
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Alain Demouzon</i>";
 			break;
 		case 6:
 			echo "Tout ce qu’il faut pour faire une comédie c’est un parc, un policier et une jolie fille.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Charlie Chaplin</i>";
 			break;
 		case 7:
 			echo "Dans un bon roman policier rien n’est perdu, il n’y a pas de phrase ni de mot qui ne soient pas significatifs.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Paul Auster</i>";
 			break;
 		case 8:
 			echo "Lire la fin d'un roman policier avant d'y arriver, c'est comme manger un biscuit fourré à la noix de coco en allant tout de suite à la noix de coco. Après il ne reste plus qu'à jeter le biscuit.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Stephen King</i>";
 			break;
 		case 9:
 			echo "Toutes les pièces qui ont été écrites, depuis l'Antiquité jusqu'à nos jours, n'ont jamais été que policières. Le théâtre n'a jamais été que réaliste et policier. Toute pièce est une enquête menée à bonne fin.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Eugène Ionesco</i>";
 			break;
 		default:
@@ -102,7 +102,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/policier.jpg" alt="Policier" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/policier.jpg" alt="Policier"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('Roman', 'Policier'); ?>
 								</article>

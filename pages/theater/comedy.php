@@ -1,36 +1,36 @@
 <?php
 function citation() {
 	$citation = rand(1, 6);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "Rien ne rend si aimable que de se croire aimé.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Pierre Carlet de Chamblain de Marivaux</i>";
 			break;
 		case 2:
 			echo "Un héros de roman infidèle ! On n'aurait jamais rien vu de pareil ; il est réglé qu’ils doivent tous être constants.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Pierre Carlet de Chamblain de Marivaux</i>";
 			break;
 		case 3:
 			echo "Bien écouter, c’est presque répondre.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Pierre Carlet de Chamblain de Marivaux</i>";
 			break;
 		case 4:
 			echo "On ne met rien dans son coeur ; on y prend ce qu'on y trouve.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Pierre Carlet de Chamblain de Marivaux</i>";
 			break;
 		case 5:
 			echo "Mon coeur est fait comme celui de tout le monde. De quoi le vôtre s'avise-t-il de n'être fait comme celui de personne?
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Le Jeu de l'amour et du hasard, Pierre Carlet de Chamblain de Marivaux</i>";
 			break;
 		case 6:
 			echo "Tous les hommes sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels; toutes les femmes sont perfides, artificieuses, vaniteuses, curieuses et dépravées.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>On ne badine pas avec l'amour, Alfred de Musset</i>";
 			break;
 		default:
@@ -87,7 +87,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/drama.png" alt="Comédie dramatique" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/drama.png" alt="Comédie dramatique"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('Théâtre', 'Comédie'); ?>
 								</article>

@@ -1,36 +1,36 @@
 <?php
 function citation() {
 	$citation = rand(1, 6);
-    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" style=\"width: 40px; opacity: 0.5; margin-right: 5px;\" />";
+    echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\"/>";
     switch ($citation) {
 		case 1:
 			echo "La seule chose que nous ayons à craindre, c'est que le ciel nous tombe sur la tête !
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>René Goscinny</i>";
 			break;
 		case 2:
 			echo "Comme on dit «il faut rendre à César ce qui appartient à César», j'ai envie de dire: «Il faut rendre Astérix à ses lecteurs. Car c'est à eux qu'il appartient... Et pas à moi.
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Albert Uderzo</i>";
 			break;
 		case 3:
 			echo "Vous n'êtes pas honteux ? VOUS VOUS ETES CONDUITS COMME DES HUMAINS !!
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Les Schtroumpfs, Peyo</i>";
 			break;
 		case 4:
 			echo "Parce que ce schtroumpf est schtroumpfé pour schtroumpfer de la schtroumpf au schtroumpf et non pas des schtroumpfs schtroumpfés !
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Les Schtroumpfs, Peyo</i>";
 			break;
 		case 5:
 			echo "Ah non, Schtroumpf à Lunettes...Ne recommence pas avec tes réflexions schtroumpfistes !
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Les Schtroumpfs, Peyo</i>";
 			break;
 		case 6:
 			echo "Avez-vous été attaqués par une force supérieure en nombre ?<br />Supérieure en nombre...<br />...On ne peut pas dire !!!<br />Ils étaient un...<br />...Et pas bien gros avec ça !
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" style=\"width: 40px; opacity: 0.5; margin-left: 5px;\" />
+				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
 				<br /><i>Astérix le Gaulois, René Goscinny et Albert Uderzo</i>";
 			break;
 		default:
@@ -87,7 +87,7 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-									<center><img src="/LectureDuJour/images/smurf.jpg" alt="Schtroumpf à Lunettes" style="width: 500px; box-shadow: 5px 10px 8px #888888"/></center>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/smurf.jpg" alt="Schtroumpf à Lunettes"/></div>
 									<?php include('../display_book.php') ?>
 									<?php oeuvre('BD', 'Humoristique'); ?>
 								</article>
