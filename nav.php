@@ -42,7 +42,7 @@
 	</ul>
 </nav>
 
-<div id="second_nav" style="position: fixed" class="second">
+<div id="second_nav" class="second" onscroll="defilement()">
     <span class="fa fa-bars" id="icone_menu" onclick="derouler_menu()" style="margin: 0px; display: block;" />
     <span style="color: #df7366; font-weight: bold; margin-left: 4px; font-size: 25px;">Menu</span>
     <ul id="main_part" style="display: none;">
@@ -89,6 +89,13 @@
 </div>
 
 <script>
+    if (document.documentElement.scrollTop > 600) {
+        document.getElementById(`second_nav`).style.display = 'block';
+    }
+    else {
+        document.getElementById(`second_nav`).style.display = 'none';
+    }
+
     let menu = false;
     function derouler_menu() {
         menu = !menu;
@@ -98,17 +105,17 @@
         else document.getElementById(`main_part`).style.display = 'none';
     }
 
-    $('#second_nav').hide();  // d'abord, on masque le deuxième menu de navigation, qui porte la classe "navigation2"
-    const hauteur = 600; // XXX, c'est le nombre de pixels à partir duquel on déclenche le tout
-    $(function(){
-        $(window).scroll(() => { //Au scroll dans la fenetre on déclenche la fonction
-            if ($(this).scrollTop() > hauteur) { //si on a défile de plus de XXX (variable "hauteur) pixels du haut vers le bas
-                //document.getElementById(`nav`).style.display = 'none'; // On masque le 1
-                document.getElementById(`second_nav`).style.display = 'block'; // On affiche le 2
-            } else {
-                document.getElementById(`second_nav`).style.display = 'none'; // "et vice et versa" (© Les inconnus, 1990 ^^)
-               // document.getElementById(`nav`).style.display = 'none';
-            }
-        });
+
+
+    /*
+    document.getElementById(`second_nav`).style.display = 'none';
+    // d'abord, on masque le deuxième menu de navigation, qui porte la classe "navigation2"
+    $(window).scroll(() => { //Au scroll dans la fenetre on déclenche la fonction
+        if ($(this).scrollTop() > hauteur) { //si on a défile de plus de XXX (variable "hauteur) pixels du haut vers le bas
+            document.getElementById(`second_nav`).style.display = 'block'; // On affiche le 2
+        } else {
+            document.getElementById(`second_nav`).style.display = 'none'; // "et vice et versa" (© Les inconnus, 1990 ^^)
+        }
     });
+    */
 </script>

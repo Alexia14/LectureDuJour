@@ -50,11 +50,13 @@
 }
 
 #second_nav {
+	position: fixed;
+    top: 100px;
+    left: 20px;
 	border: 2px solid #df7366;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 5px 10px 8px #888888;
 	padding: 20px;
-	margin: 20px;
     color: black;
     text-align: left;
 	text-decoration: none;
@@ -101,7 +103,7 @@
 
 .retour_top {
     bottom: 100px;
-    right: 70px;
+    right: 60px;
     position: fixed;
     z-index: 1;
 }
