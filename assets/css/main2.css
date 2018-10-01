@@ -177,3 +177,23 @@ input, select {
 .fa:hover {
     cursor: pointer;
 }
+
+
+/* pages du site */
+
+.quotation {
+	width: 40px;
+	opacity: 0.5;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.image_genre_style {
+	text-align: center;
+}
+.image_genre_style img {
+	width: 650px;
+	box-shadow: 5px 10px 8px #888888;
+	border-radius: 15px;
+	text-align: center;
+}

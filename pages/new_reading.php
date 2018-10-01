@@ -62,11 +62,11 @@ function ajout_oeuvre() {
 		}
 	}
 
-	$lecture = $bdd->prepare("INSERT INTO oeuvres (titre, auteur, type, style, nationalite, parution, personnages, resume) VALUES(:titre, :auteur, :type, :style, :nationalite, :parution, :personnages, :resume)");
+	$lecture = $bdd->prepare("INSERT INTO oeuvres (titre, auteur, genre, style, nationalite, parution, personnages, resume) VALUES(:titre, :auteur, :genre, :style, :nationalite, :parution, :personnages, :resume)");
 	$lecture->execute(array(
 		'titre' => $_POST['titre'],
 		'auteur' => $_POST['auteur'],
-		'type' => $_POST['type'],
+		'genre' => $_POST['genre'],
 		'style' => $styleOeuvre,
 		'nationalite' => $_POST['nationalite'],
 		'parution' => $parution,
@@ -129,7 +129,7 @@ function ajout_oeuvre() {
 									<tr>
 										<td class="form_col1">Style<span style="color: red">*</span> :</td>
 										<td colspan="3">
-											<select name="type" onchange="style_livre(this.value)">
+											<select name="genre" onchange="style_livre(this.value)">
 												<option>-- sélectionner --</option>
 												<option value="Roman">Roman</option>
 												<option value="Théâtre">Théâtre</option>

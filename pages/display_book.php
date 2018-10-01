@@ -11,7 +11,7 @@ function oeuvres_proposes($type) {
 	}
 
 	$reponse = $bdd->prepare('SELECT DISTINCT style FROM oeuvres WHERE type = ? ORDER BY style');
-	$reponse->execute(array($type));
+	$reponse->execute(array($genre));
 
 	$liste_styles = "<ul>";
 	while($donnees = $reponse->fetch()) {
@@ -23,7 +23,7 @@ function oeuvres_proposes($type) {
 	echo $liste_styles;
 }
 
-function oeuvre($type, $style) {
+function oeuvre($genre, $style) {
 	try
 	{
 		$bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
@@ -34,7 +34,7 @@ function oeuvre($type, $style) {
 	}
 
 	$reponse = $bdd->prepare('SELECT * FROM oeuvres WHERE type = ? AND style = ? ORDER BY auteur');
-	$reponse->execute(array($type, $style));
+	$reponse->execute(array($genre, $style));
 
 	$oeuvre = "";
 	while($donnees = $reponse->fetch()) {
