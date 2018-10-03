@@ -13,13 +13,18 @@
 					</ul>
 				</li>
 				<li>
-					<a href="/LectureDuJour/pages/theater.php">Théâtre</a>
-					<ul>
-						<li><a href="/LectureDuJour/pages/theater/absurd.php">Absurde</a></li>
-						<li><a href="/LectureDuJour/pages/theater/comedy.php">Comédie</a></li>
-						</li>
-					</ul>
+					<a href="/LectureDuJour/pages/novella.php">Nouvelles</a>
 				</li>
+                <li>
+                    <a href="/LectureDuJour/pages/theater.php">Théâtre</a>
+                    <ul>
+                        <li><a href="/LectureDuJour/pages/theater/absurd.php">Absurde</a></li>
+                        <li><a href="/LectureDuJour/pages/theater/comedy.php">Comédie</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/LectureDuJour/pages/poetry.php">Poésie</a>
+                </li>
 				<li>
 					<a href="/LectureDuJour/pages/youth.php">Jeunesse</a>
 					<ul>
@@ -31,7 +36,6 @@
 					<ul>
 						<li><a href="/LectureDuJour/pages/comic/fantastic.php">Fantastique</a></li>
 						<li><a href="/LectureDuJour/pages/comic/cartoon.php">Humoristique</a></li>
-						</li>
 					</ul>
 				</li>
 			</ul>
@@ -59,12 +63,17 @@
                     </ul>
                 </li>
                 <li>
+                    <a href="/LectureDuJour/pages/novella.php">Nouvelles</a>
+                </li>
+                <li>
                     <a href="/LectureDuJour/pages/theater.php">Théâtre</a>
                     <ul>
                         <li><a href="/LectureDuJour/pages/theater/absurd.php">Absurde</a></li>
                         <li><a href="/LectureDuJour/pages/theater/comedy.php">Comédie</a></li>
-                        </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="/LectureDuJour/pages/poetry.php">Poésie</a>
                 </li>
                 <li>
                     <a href="/LectureDuJour/pages/youth.php">Jeunesse</a>
@@ -77,7 +86,6 @@
                     <ul>
                         <li><a href="/LectureDuJour/pages/comic/fantastic.php">Fantastique</a></li>
                         <li><a href="/LectureDuJour/pages/comic/cartoon.php">Humoristique</a></li>
-                        </li>
                     </ul>
                 </li>
             </ul>
