@@ -126,6 +126,8 @@ function ajout_personne() {
         <div class="inner">
             <header>
                 <h1><a href="/LectureDuJour/index.php" id="logo">Lecture du Jour</a></h1>
+                <hr />
+                <p>Connectez vous</p>
             </header>
         </div>
 

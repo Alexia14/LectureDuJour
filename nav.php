@@ -40,7 +40,7 @@
                 </li>
             </ul>
         </li>
-        <li><a href="/LectureDuJour/pages/literary_work.php">Rechercher</a></li>
+        <li><a href="/LectureDuJour/pages/search.php">Rechercher</a></li>
         <li><a href="/LectureDuJour/pages/new_reading.php">Nouvelle saisie</a></li>
         <li><a href="/LectureDuJour/pages/connect.php">Connexion</a></li>
     </ul>
@@ -90,7 +90,7 @@
                 </li>
             </ul>
         </li>
-        <li><a href="/LectureDuJour/pages/literary_work.php">Rechercher</a></li>
+        <li><a href="/LectureDuJour/pages/search.php">Rechercher</a></li>
         <li><a href="/LectureDuJour/pages/new_reading.php">Nouvelle saisie</a></li>
         <li><a href="/LectureDuJour/pages/connect.php">Connexion</a></li>
     </ul>
