@@ -80,7 +80,7 @@ function citation() {
 							<header>
 								<h1><a href="/LectureDuJour/index.php" id="logo">Lecture du Jour</a></h1>
 								<hr />
-								<p>Romans</p>
+								<p>Roman</p>
 							</header>
 						</div>
 

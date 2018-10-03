@@ -1,42 +1,22 @@
 <?php
 function citation() {
-    $citation = rand(1, 7);
+    $citation = rand(1, 3);
     echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\" />";
     switch ($citation) {
         case 1:
-            echo "
+            echo "D'ailleurs, parce que le vent, comme on dit, n'est pas à la poésie, ce n'est pas un motif pour que la poésie ne prenne pas son envol. Tout au contraire des vaisseaux, les oiseaux ne volent bien que contre le vent. Or la poésie tient de l'oiseau.
 				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
+				<br /><i>Victor Hugo</i>";
             break;
         case 2:
-            echo "
+            echo "Le souvenir est poésie, et la poésie n’est autre que souvenir.
 				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
+				<br /><i>Giovanni Pascoli</i>";
             break;
         case 3:
-            echo "
+            echo "La peinture est une poésie qui se voit au lieu de se sentir et la poésie est une peinture qui se sent au lieu de se voir. 
 				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-            break;
-        case 4:
-            echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-            break;
-        case 5:
-            echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-            break;
-        case 6:
-            echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-            break;
-        case 7:
-            echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
+				<br /><i>Léonard de Vinci</i>";
             break;
         default:
             break;
@@ -95,9 +75,8 @@ function citation() {
                                     <div class="image_genre_style"><img src="/LectureDuJour/images/poesie.jpg" alt="Poésie"/></div>
 									<section>
 										<p>
-											Vous vous trouvez ici dans la catégorie des bandes dessinées.
+											Vous vous trouvez ici dans la catégorie de la poésie.
 											<br />
-											Comme pour tout type de lecture, vous pouvez trouver en plusieurs de nombreuses sortes :
 											<?php include('display_book.php') ?>
 											<?php oeuvres_proposes('Poésie'); ?>
 										</p>
@@ -110,13 +89,16 @@ function citation() {
 									<header>
 										<h3>Poésie</h3>
 									</header>
-									<p>
-										<br />
-										<i>()</i>
-									</p>
-									<footer>
-										<a href="" class="button">Lire plus</a>
-									</footer>
+                                    <p>
+                                        La poésie est un art du langage, une façon de « sculpter » les phrases et les mots pour leur faire dire plus qu'ils ne disent habituellement. Par la richesse des images poétiques, l'artiste donne à voir sa propre vision du monde.
+                                        <br />
+                                        Traditionnellement, un poème est écrit en vers réguliers qui riment. Mais il peut également être écrit en prose : la force suggestive des images, le rythme et la musicalité des mots suffisent à en faire une œuvre poétique.
+                                        <br />
+                                        <i>(www.assistancescolaire.com)</i>
+                                    </p>
+                                    <footer>
+                                        <a href="https://www.assistancescolaire.com/eleve/6e/francais/lexique/P-poeme-poesie-fc_p18" class="button">Lire plus</a>
+                                    </footer>
 								</section>
 								<hr />
                                 <section>

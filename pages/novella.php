@@ -1,42 +1,17 @@
 <?php
 function citation() {
-	$citation = rand(1, 7);
+	$citation = rand(1, 2);
 	echo "<img src=\"/LectureDuJour/images/quotation1.png\" alt=\"« \" class=\"quotation\" />";
 	switch ($citation) {
 		case 1:
-			echo "
+			echo "Une vie... quelques jours, et puis plus rien.
 				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
+				<br /><i>Guy de Maupassant</i>";
 			break;
 		case 2:
-			echo "
+			echo "Et Boule de suif pleurait toujours et parfois un sanglot, qu'elle n'avait pu retenir, passait, entre deux couplets, dans les ténèbres.
 				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-			break;
-		case 3:
-			echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-			break;
-		case 4:
-			echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-			break;
-		case 5:
-			echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-			break;
-		case 6:
-			echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
-			break;
-		case 7:
-			echo "
-				<img src=\"/LectureDuJour/images/quotation2.png\" alt=\" »\" class=\"quotation\"/>
-				<br /><i></i>";
+				<br /><i>Guy de Maupassant</i>";
 			break;
 		default:
 			break;
@@ -92,12 +67,11 @@ function citation() {
 											<?php citation(); ?>
 										</p>
 									</header>
-                                    <div class="image_genre_style"><img src="/LectureDuJour/images/BD.jpg" alt="Bande dessinée"/></div>
+                                    <div class="image_genre_style"><img src="/LectureDuJour/images/nouvelle.jpg" alt="Nouvelles"/></div>
 									<section>
 										<p>
-											Vous vous trouvez ici dans la catégorie des bandes dessinées.
+											Vous vous trouvez ici dans la catégorie des nouvelles.
 											<br />
-											Comme pour tout type de lecture, vous pouvez trouver en plusieurs de nombreuses sortes :
 											<?php include('display_book.php') ?>
 											<?php oeuvres_proposes('Nouvelle'); ?>
 										</p>
@@ -111,11 +85,12 @@ function citation() {
 										<h3>Nouvelle</h3>
 									</header>
 									<p>
-										<br />
-										<i>()</i>
+                                        La nouvelle est un récit court, écrit en prose. Cependant, plus que sa longueur, c'est bien davantage la concision et l'efficacité de son écriture qui la caractérisent. En règle générale, les personnages d'une nouvelle sont peu nombreux et brièvement décrits. Son action est assez simple mais construite de façon à ménager un effet de surprise au dénouement : c'est ce que l'on appelle la chute.
+                                        <br />
+										<i>(www.assistancescolaire.com)</i>
 									</p>
 									<footer>
-										<a href="" class="button">Lire plus</a>
+										<a href="https://www.assistancescolaire.com/eleve/6e/francais/lexique/N-nouvelle-fc_n06" class="button">Lire plus</a>
 									</footer>
 								</section>
 								<hr />
