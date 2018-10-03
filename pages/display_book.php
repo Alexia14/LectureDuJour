@@ -1,37 +1,5 @@
 <?php
 
-function toutes_oeuvres_proposes() {
-    try
-    {
-        $bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
-    }
-    catch(Exception $e)
-    {
-        die('Erreur : '.$e->getMessage());
-    }
-
-    $reponse1 = $bdd->query('SELECT DISTINCT genre FROM oeuvres');
-    $liste_genre_styles = "<ul>";
-    while ($donnees1 = $reponse1->fetch()) {
-        $genre = $donnees1['genre'];
-        $liste_genre_styles .= "<li style=\"margin-left: 40px;\">" . $genre;
-
-        $reponse2 = $bdd->prepare('SELECT DISTINCT style FROM oeuvres WHERE genre = ? ORDER BY style');
-        $reponse2->execute(array($genre));
-
-        $liste_genre_styles .= "<ul>";
-        while ($donnees2 = $reponse2->fetch()) {
-            $liste_genre_styles .= "<li style=\"margin-left: 40px;\">" . $donnees2['style'] . "</li>";
-        }
-        $liste_genre_styles .= "</ul></li>";
-        $reponse2->closeCursor();
-    }
-    $liste_genre_styles .= "</ul>";
-
-    $reponse1->closeCursor();
-    echo $liste_genre_styles;
-}
-
 function oeuvres_proposes($genre) {
     try 	{
         $bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');

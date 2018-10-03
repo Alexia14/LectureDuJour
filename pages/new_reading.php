@@ -132,7 +132,9 @@ function ajout_oeuvre() {
                                 <select name="genre" onchange="style_livre(this.value)">
                                     <option>-- sélectionner --</option>
                                     <option value="Roman">Roman</option>
+                                    <option value="Nouvelle">Nouvelle</option>
                                     <option value="Théâtre">Théâtre</option>
+                                    <option value="Poésie">Poésie</option>
                                     <option value="Jeunesse">Jeunesse</option>
                                     <option value="BD">BD</option>
                                 </select>
@@ -145,9 +147,19 @@ function ajout_oeuvre() {
                                         <input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
                                     </div>
                                 </div>
+                                <div id="blockNouvelle" class="block_style_livre">
+                                    <div style="display: flex;">
+                                        <input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
+                                    </div>
+                                </div>
                                 <div id="blockThéâtre" class="block_style_livre">
                                     <input type="radio" name="style" value="Absurde">Absurde
                                     <input type="radio" name="style" value="Comédie">Comédie
+                                    <div style="display: flex;">
+                                        <input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
+                                    </div>
+                                </div>
+                                <div id="blockPoésie" class="block_style_livre">
                                     <div style="display: flex;">
                                         <input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
                                     </div>

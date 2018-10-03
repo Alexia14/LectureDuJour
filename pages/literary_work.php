@@ -113,7 +113,30 @@ function citation() {
                                 Vous pouvez retrouver sur ce site des avis de lecteur sur les oeuvres publiées, des informations générales sur celles-çi comme la liste des personnages et le résumé de l'oeuvre telle qu'elle a été perçue par le lecteur.
                                 <br />
                                 Ce site ouvert à tous regroupe des genres littéraires variés tels que :
-                                <?php toutes_oeuvres_proposes(); ?>
+                            <div style="margin-left: 40px;">
+                                <li style="list-style: square;">Roman</li>
+                                <ul>
+                                    <li style="margin-left: 40px;">Autobiographie</li>
+                                    <li style="margin-left: 40px;">Littéraire</li>
+                                    <li style="margin-left: 40px;">Policier</li>
+                                </ul>
+                                <li style="list-style: square;">Nouvelle</li>
+                                <li style="list-style: square;">Théâtre</li>
+                                <ul>
+                                    <li style="margin-left: 40px;">Absurde</li>
+                                    <li style="margin-left: 40px;">Comédie</li>
+                                </ul>
+                                <li style="list-style: square;">Poésie</li>
+                                <li style="list-style: square;">Jeunesse</li>
+                                <ul>
+                                    <li style="margin-left: 40px;">Fiction</li>
+                                </ul>
+                                <li style="list-style: square;">BD</li>
+                                <ul>
+                                    <li style="margin-left: 40px;">Fantastique</li>
+                                    <li style="margin-left: 40px;">Humoristique</li>
+                                </ul>
+                            </div>
                             </p>
                         </section>
                     </article>
