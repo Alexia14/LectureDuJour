@@ -1,20 +1,20 @@
 <nav id="nav" class="cl-effect-1">
-	<ul>
-		<li><a href="/LectureDuJour/index.php">Accueil</a></li>
-		<li>
-			<a href="/LectureDuJour/pages/literary_work.php">Oeuvres</a>
-			<ul>
-				<li>
-					<a href="/LectureDuJour/pages/novel.php">Roman</a>
-					<ul>
-						<li><a href="/LectureDuJour/pages/novel/autobiography.php">Autobiographie</a></li>
-						<li><a href="/LectureDuJour/pages/novel/literature.php">Littérature</a></li>
-						<li><a href="/LectureDuJour/pages/novel/detective.php">Policier</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="/LectureDuJour/pages/novella.php">Nouvelles</a>
-				</li>
+    <ul>
+        <li><a href="/LectureDuJour/index.php">Accueil</a></li>
+        <li>
+            <a href="/LectureDuJour/pages/literary_work.php">Oeuvres</a>
+            <ul>
+                <li>
+                    <a href="/LectureDuJour/pages/novel.php">Roman</a>
+                    <ul>
+                        <li><a href="/LectureDuJour/pages/novel/autobiography.php">Autobiographie</a></li>
+                        <li><a href="/LectureDuJour/pages/novel/literature.php">Littérature</a></li>
+                        <li><a href="/LectureDuJour/pages/novel/detective.php">Policier</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/LectureDuJour/pages/novella.php">Nouvelles</a>
+                </li>
                 <li>
                     <a href="/LectureDuJour/pages/theater.php">Théâtre</a>
                     <ul>
@@ -25,25 +25,25 @@
                 <li>
                     <a href="/LectureDuJour/pages/poetry.php">Poésie</a>
                 </li>
-				<li>
-					<a href="/LectureDuJour/pages/youth.php">Jeunesse</a>
-					<ul>
-						<li><a href="/LectureDuJour/pages/youth/fiction.php">Fiction</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="/LectureDuJour/pages/comic.php">BD</a>
-					<ul>
-						<li><a href="/LectureDuJour/pages/comic/fantastic.php">Fantastique</a></li>
-						<li><a href="/LectureDuJour/pages/comic/cartoon.php">Humoristique</a></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li><a href="/LectureDuJour/pages/literary_work.php">Rechercher</a></li>
-		<li><a href="/LectureDuJour/pages/new_reading.php">Nouvelle saisie</a></li>
-		<li><a href="/LectureDuJour/pages/connect.php">Connexion</a></li>
-	</ul>
+                <li>
+                    <a href="/LectureDuJour/pages/youth.php">Jeunesse</a>
+                    <ul>
+                        <li><a href="/LectureDuJour/pages/youth/fiction.php">Fiction</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/LectureDuJour/pages/comic.php">BD</a>
+                    <ul>
+                        <li><a href="/LectureDuJour/pages/comic/fantastic.php">Fantastique</a></li>
+                        <li><a href="/LectureDuJour/pages/comic/cartoon.php">Humoristique</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/LectureDuJour/pages/literary_work.php">Rechercher</a></li>
+        <li><a href="/LectureDuJour/pages/new_reading.php">Nouvelle saisie</a></li>
+        <li><a href="/LectureDuJour/pages/connect.php">Connexion</a></li>
+    </ul>
 </nav>
 
 <div id="second_nav" class="second" onscroll="defilement()">

@@ -51,20 +51,20 @@
 
 #second_nav {
 	position: fixed;
-    top: 100px;
-    left: 20px;
+	top: 100px;
+	left: 20px;
 	border: 2px solid #df7366;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 5px 10px 8px #888888;
 	padding: 20px;
-    color: black;
-    text-align: left;
+	color: black;
+	text-align: left;
 	text-decoration: none;
 	background-color: white;
-    z-index: 1;
+	z-index: 1;
 }
 #second_nav ul, #second_nav li {
-    list-style: none;
+	list-style: none;
 }
 #second_nav a {
 	border-bottom: none;
@@ -74,38 +74,38 @@
 /* footer */
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #df7366;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #df7366;
 }
 .overlay:hover {
-    opacity: 0.5;
+	opacity: 0.5;
 }
 .overlay_text {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .retour_top {
-    bottom: 100px;
-    right: 60px;
-    position: fixed;
-    z-index: 1;
+	bottom: 100px;
+	right: 60px;
+	position: fixed;
+	z-index: 1;
 }
 
 
@@ -171,11 +171,11 @@ input, select {
 /* icons */
 
 .fa-plus:before, .fa-times:before, .fa-edit:before, .fa-bars:before {
-    font-size: 25px;
-    color: #df7366;
+	font-size: 25px;
+	color: #df7366;
 }
 .fa:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 
