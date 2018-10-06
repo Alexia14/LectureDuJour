@@ -44,6 +44,13 @@ function ajout_oeuvre() {
         }
     }
 
+    if (isset($_POST['genre']) and !empty($_POST['genre']) and $_POST['genre'] != "Autre") {
+        $genreOeuvre = $_POST['genre'];
+    }
+    elseif (isset($_POST['newStyle'])) {
+        $genreOeuvre = $_POST['newGenre'];
+    }
+
     if (isset($_POST['style']) and !empty($_POST['style'])) {
         $styleOeuvre = $_POST['style'];
     }
@@ -66,13 +73,15 @@ function ajout_oeuvre() {
     $lecture->execute(array(
         'titre' => $_POST['titre'],
         'auteur' => $_POST['auteur'],
-        'genre' => $_POST['genre'],
+        'genre' => $genreOeuvre,
         'style' => $styleOeuvre,
         'nationalite' => $_POST['nationalite'],
         'parution' => $parution,
         'personnages' => $listePersos,
         'resume' => $_POST['resume']
     ));
+
+    $lecture->closeCursor();
 }
 ?>
 
@@ -131,6 +140,7 @@ function ajout_oeuvre() {
                                     <option value="Poésie">Poésie</option>
                                     <option value="Jeunesse">Jeunesse</option>
                                     <option value="BD">BD</option>
+                                    <option value="Autre">Autre</option>
                                 </select>
 
                                 <div id="blockRoman" class="block_style_livre">
@@ -169,6 +179,12 @@ function ajout_oeuvre() {
                                     <input type="radio" name="style" value="Humoristique">Humoristique
                                     <div style="display: flex;">
                                         <input type="radio" name="style" style="float: left; margin-top: auto; margin-bottom: auto;"><input type="text" name="newStyle" placeholder="autre" style="width: 90%;">
+                                    </div>
+                                </div>
+                                <div id="blockAutre" class="block_style_livre">
+                                    <div style="display: flex;">
+                                        <input type="text" name="newGenre" placeholder="genre ex: roman" style="width: 40%; margin-right: 5%;">
+                                        <input type="text" name="newStyle" placeholder="style ex: autobiographie" style="width: 40%;">
                                     </div>
                                 </div>
                             </td>
