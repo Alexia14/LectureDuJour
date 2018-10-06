@@ -46,10 +46,11 @@
     </ul>
 </nav>
 
-<div id="second_nav" class="second" onscroll="defilement()">
-    <span class="fa fa-bars" id="icone_menu" onclick="derouler_menu()" style="margin: 0px; display: block;" />
+<div id="second_nav" onscroll="myFunction()" style="display: block;">
+    <span class="fa fa-bars" id="icone_menu" onclick="derouler_menu()" style="margin: 0; display: block;">
     <span style="color: #df7366; font-weight: bold; margin-left: 4px; font-size: 25px;">Menu</span>
-    <ul id="main_part" style="display: none;">
+    </span>
+    <ul id="main_part" style="display: none; margin-top: 1em;">
         <li><a href="/LectureDuJour/index.php">Accueil</a></li>
         <li>
             <a href="/LectureDuJour/pages/literary_work.php">Oeuvres</a>
@@ -97,23 +98,25 @@
 </div>
 
 <script>
-    if (document.documentElement.scrollTop > 600) {
-        document.getElementById(`second_nav`).style.display = 'block';
-    }
-    else {
-        document.getElementById(`second_nav`).style.display = 'none';
-    }
-
     let menu = false;
     function derouler_menu() {
         menu = !menu;
-        if (menu == true) {
+        if (menu) {
             document.getElementById(`main_part`).style.display = 'block';
         }
         else document.getElementById(`main_part`).style.display = 'none';
     }
+    
+    function myFunction() {
+        document.getElementById("second_nav").style.display = "none";
+    }
 
-
+    /*if (document.documentElement.scrollTop > 600) {
+        document.getElementById(`second_nav`).style.display = 'block';
+    }
+    else {
+        document.getElementById(`second_nav`).style.display = 'none';
+    }*/
 
     /*
     document.getElementById(`second_nav`).style.display = 'none';
@@ -126,4 +129,5 @@
         }
     });
     */
+
 </script>

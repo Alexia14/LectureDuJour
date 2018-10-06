@@ -63,12 +63,11 @@
 	background-color: white;
 	z-index: 1;
 }
-#second_nav ul, #second_nav li {
-	list-style: none;
-}
-#second_nav a {
-	border-bottom: none;
-}
+#second_nav ul > li, #second_nav ul > li > ul, #second_nav ul > li > ul > li > ul { margin: 0; }
+#second_nav ul > li { list-style: none; }
+#second_nav ul > li > ul > li { list-style: square; }
+#second_nav ul > li > ul > li > ul > li { list-style: circle; }
+#second_nav a { border-bottom: none; }
 
 
 /* footer */
@@ -151,7 +150,7 @@ input, select {
 .titre {
 	font-size: 35px;
 	color: #df7366;
-	font-family: Comic Sans MS;
+	font-family: 'Comic Sans MS', serif;
 	font-weight: bold;
 }
 .auteur, .nationalite, .parution {
@@ -164,7 +163,7 @@ input, select {
 }
 .resume {
 	color: #df7366;
-	font-family: Comic Sans MS;
+	font-family: 'Comic Sans MS', serif;
 	font-weight: bold;
 }
 
