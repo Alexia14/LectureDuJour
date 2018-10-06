@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="/LectureDuJour/assets/css/main.css" />
     <link rel="stylesheet" href="/LectureDuJour/assets/css/main2.css" />
     <noscript><link rel="stylesheet" href="/LectureDuJour/assets/css/noscript.css" /></noscript>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <nav id="nav" class="cl-effect-1">

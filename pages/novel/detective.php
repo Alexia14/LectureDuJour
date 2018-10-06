@@ -61,7 +61,9 @@ function citation() {
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 <body class="right-sidebar is-preload">
 <div id="page-wrapper">
 
