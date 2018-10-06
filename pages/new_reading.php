@@ -78,15 +78,7 @@ function ajout_oeuvre() {
 
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>Lecture du Jour</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/LectureDuJour/assets/css/main.css" />
-    <link rel="stylesheet" href="/LectureDuJour/assets/css/main2.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <noscript><link rel="stylesheet" href="/LectureDuJour/assets/css/noscript.css" /></noscript>
-</head>
+
 <body class="right-sidebar is-preload">
 <div id="page-wrapper">
 
