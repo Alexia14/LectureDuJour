@@ -1,3 +1,13 @@
+<head>
+    <title>Lecture du Jour</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/LectureDuJour/assets/css/main.css" />
+    <link rel="stylesheet" href="/LectureDuJour/assets/css/main2.css" />
+    <noscript><link rel="stylesheet" href="/LectureDuJour/assets/css/noscript.css" /></noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
 <nav id="nav" class="cl-effect-1">
     <ul>
         <li><a href="/LectureDuJour/index.php">Accueil</a></li>
@@ -46,7 +56,7 @@
     </ul>
 </nav>
 
-<div id="second_nav" onscroll="myFunction()" style="display: block;">
+<div id="second_nav" style="display: none;">
     <span class="fa fa-bars" id="icone_menu" onclick="derouler_menu()" style="margin: 0; display: block;">
     <span style="color: #df7366; font-weight: bold; margin-left: 4px; font-size: 25px;">Menu</span>
     </span>
@@ -106,28 +116,15 @@
         }
         else document.getElementById(`main_part`).style.display = 'none';
     }
-    
-    function myFunction() {
-        document.getElementById("second_nav").style.display = "none";
-    }
 
-    /*if (document.documentElement.scrollTop > 600) {
-        document.getElementById(`second_nav`).style.display = 'block';
-    }
-    else {
-        document.getElementById(`second_nav`).style.display = 'none';
-    }*/
-
-    /*
-    document.getElementById(`second_nav`).style.display = 'none';
-    // d'abord, on masque le deuxième menu de navigation, qui porte la classe "navigation2"
-    $(window).scroll(() => { //Au scroll dans la fenetre on déclenche la fonction
-        if ($(this).scrollTop() > hauteur) { //si on a défile de plus de XXX (variable "hauteur) pixels du haut vers le bas
-            document.getElementById(`second_nav`).style.display = 'block'; // On affiche le 2
-        } else {
-            document.getElementById(`second_nav`).style.display = 'none'; // "et vice et versa" (© Les inconnus, 1990 ^^)
-        }
+    $(function() {
+        $(window).scroll(() => {
+            if ($(this).scrollTop() > $('#bottom_header').offset().top) {
+                document.getElementById(`second_nav`).style.display = 'block';
+            } else {
+                document.getElementById(`second_nav`).style.display = 'none';
+            }
+        });
     });
-    */
 
 </script>

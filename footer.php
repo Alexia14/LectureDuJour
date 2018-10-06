@@ -1,5 +1,5 @@
-<div class="retour_top" style="display: block;">
-    <span class="fa fa-chevron-circle-up" onclick="haut_de_page()" style="font-size: 45px; color: #df7366;"/>
+<div class="retour_top" id="retour_top" style="display: none;">
+    <span class="fa fa-chevron-circle-up" onclick="haut_de_page()" style="font-size: 45px; color: #df7366;"></span>
 </div>
 
 <div id="footer">
@@ -168,13 +168,12 @@
         }, 'slow');
     }
 
-    document.getElementsByClassName(`retour_top`).style.display = "none";  // d'abord, on masque le deuxième menu de navigation, qui porte la classe "navigation2"
-    $(function(){
-        $(window).scroll(() => { //Au scroll dans la fenetre on déclenche la fonction
-            if ($(this).scrollTop() > hauteur) { //si on a défile de plus de XXX (variable "hauteur) pixels du haut vers le bas
-                document.getElementsByClassName(`retour_top`).style.display = "block";
+    $(function() {
+        $(window).scroll(() => {
+            if ($(this).scrollTop() > $('#bottom_header').offset().top) {
+                document.getElementById(`retour_top`).style.display = "block";
             } else {
-                document.getElementsByClassName(`retour_top`).style.display = "none";
+                document.getElementById(`retour_top`).style.display = "none";
             }
         });
     });

@@ -63,14 +63,7 @@ function citation() {
 
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>Lecture du Jour</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/LectureDuJour/assets/css/main.css" />
-    <link rel="stylesheet" href="/LectureDuJour/assets/css/main2.css" />
-    <noscript><link rel="stylesheet" href="/LectureDuJour/assets/css/noscript.css" /></noscript>
-</head>
+
 <body class="right-sidebar is-preload">
 <div id="page-wrapper">
 
@@ -93,7 +86,7 @@ function citation() {
 
     <!-- Main -->
     <?php include('display_book.php') ?>
-    <div class="wrapper style1">
+    <div class="wrapper style1" id="bottom_header">
 
         <div class="container">
             <div class="row gtr-200">
