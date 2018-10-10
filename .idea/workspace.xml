@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="307ac5d6-af18-4364-92b9-eb688a2c515d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/display_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/display_book.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +15,8 @@
     <session id="-275766659">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -24,66 +24,75 @@
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1387" />
-          <entry key="php" value="10469" />
-          <entry key="txt" value="549" />
+          <entry key="php" value="11147" />
+          <entry key="txt" value="568" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1387" />
           <entry key="HTML" value="49" />
-          <entry key="PHP" value="10415" />
-          <entry key="PLAIN_TEXT" value="549" />
+          <entry key="PHP" value="11093" />
+          <entry key="PLAIN_TEXT" value="568" />
           <entry key="SQL" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="15" />
-          <entry key="php" value="221" />
+          <entry key="php" value="226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="15" />
-          <entry key="PHP" value="221" />
+          <entry key="PHP" value="226" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/search.php">
+        <entry file="file://$PROJECT_DIR$/pages/display_book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="43" column="95" selection-start-line="43" selection-start-column="95" selection-end-line="43" selection-end-column="95" />
-              <caret line="47" column="97" selection-start-line="47" selection-start-column="97" selection-end-line="47" selection-end-column="97" />
-              <caret line="133" column="111" selection-start-line="133" selection-start-column="111" selection-end-line="133" selection-end-column="111" />
+            <state relative-caret-position="340">
+              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
               <folding>
-                <element signature="n#td#1;n#tr#2;n#table#0;n#form#0;n#article#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#oeuvres_proposes#0;n#!!top" />
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#oeuvre#0;n#!!top" />
+                <element signature="n#literary_research#0;n#!!top" />
+                <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#pages_research#0;n#!!top" />
+                <element signature="n#style_research#0;n#!!top" />
+                <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/new_reading.php">
+        <entry file="file://$PROJECT_DIR$/pages/theater/absurd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="122" column="20" lean-forward="true" selection-start-line="122" selection-start-column="20" selection-end-line="241" selection-end-column="28" />
-              <folding>
-                <element signature="n#table#0;n#form#0;n#article#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-323">
+              <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/novel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="128" column="57" lean-forward="true" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -118,7 +127,6 @@
       <list>
         <option value="$PROJECT_DIR$/pages/search_reading.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/pages/display_book.php" />
         <option value="$PROJECT_DIR$/assets/css/main2.css" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -141,6 +149,7 @@
         <option value="$PROJECT_DIR$/pages/youth/fiction.php" />
         <option value="$PROJECT_DIR$/pages/new_reading.php" />
         <option value="$PROJECT_DIR$/pages/search.php" />
+        <option value="$PROJECT_DIR$/pages/display_book.php" />
       </list>
     </option>
   </component>
@@ -211,6 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,11 +233,16 @@
               <item name="LectureDuJour" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LectureDuJour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LectureDuJour" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="theater" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,7 +286,9 @@
       <workItem from="1538597347413" duration="7317000" />
       <workItem from="1538670902764" duration="2253000" />
       <workItem from="1538825655867" duration="9018000" />
-      <workItem from="1538855389229" duration="1923000" />
+      <workItem from="1538855389229" duration="1994000" />
+      <workItem from="1538907243246" duration="1148000" />
+      <workItem from="1539175047770" duration="4620000" />
     </task>
     <task id="LOCAL-00001" summary="nav + pages structure + CSS">
       <created>1538086939691</created>
@@ -427,17 +444,24 @@
       <option name="project" value="LOCAL" />
       <updated>1538856940489</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="form in search page">
+      <created>1538857334443</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1538857334443</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87387000" />
+    <option name="totallyTimeSpent" value="93226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26107383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26912752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -486,7 +510,8 @@
     <MESSAGE value="&lt;head&gt; in a unique file" />
     <MESSAGE value="head script jquery in each file" />
     <MESSAGE value="improvement of the form for new_reading (&quot;Autre&quot; as an option)" />
-    <option name="LAST_COMMIT_MESSAGE" value="improvement of the form for new_reading (&quot;Autre&quot; as an option)" />
+    <MESSAGE value="form in search page" />
+    <option name="LAST_COMMIT_MESSAGE" value="form in search page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pages/search_reading.php" />
@@ -532,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/novel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/novella.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -571,17 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="112" column="7" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/display_book.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#pages_research#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/theater/absurd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/theater/comedy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -648,26 +648,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="121" column="72" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/novel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="128" column="57" lean-forward="true" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/theater/absurd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/new_reading.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="122" column="20" lean-forward="true" selection-start-line="122" selection-start-column="20" selection-end-line="241" selection-end-column="28" />
+        <state relative-caret-position="17">
+          <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
           <folding>
-            <element signature="n#table#0;n#form#0;n#article#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/search.php">
+    <entry file="file://$PROJECT_DIR$/pages/display_book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="43" column="95" selection-start-line="43" selection-start-column="95" selection-end-line="43" selection-end-column="95" />
-          <caret line="47" column="97" selection-start-line="47" selection-start-column="97" selection-end-line="47" selection-end-column="97" />
-          <caret line="133" column="111" selection-start-line="133" selection-start-column="111" selection-end-line="133" selection-end-column="111" />
+        <state relative-caret-position="340">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
           <folding>
-            <element signature="n#td#1;n#tr#2;n#table#0;n#form#0;n#article#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#oeuvres_proposes#0;n#!!top" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#oeuvre#0;n#!!top" />
+            <element signature="n#literary_research#0;n#!!top" />
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#pages_research#0;n#!!top" />
+            <element signature="n#style_research#0;n#!!top" />
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

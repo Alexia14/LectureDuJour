@@ -20,6 +20,7 @@ function oeuvres_proposes($genre) {
     echo $liste_styles;
 }
 
+//affichage de toutes les oeuvres correspondantes au genre et style
 function oeuvre($genre, $style) {
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
@@ -60,6 +61,7 @@ function oeuvre($genre, $style) {
     echo $oeuvre;
 }
 
+//affinage page oeuvre
 function literary_research() {
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
@@ -71,11 +73,11 @@ function literary_research() {
 
     $search = "<header><h3>Une recherche précise ?</h3></header>";
     $search .= "
-    <form style=\"padding-left: 20px; padding-right: 20px;\">
-        <select>
+    <form method=\"post\" onsubmit=\"afficherAuteur()\" style=\"padding-left: 20px; padding-right: 20px;\">
+        <select name=\"auteurChoisi\">
             <option value=\"-- Auteur --\">-- Auteur --</option>";
     while($donnees = $reponse->fetch()) {
-        $search .= "<option value=\"auteur1\">" . $donnees['auteur'] . "</option>";
+        $search .= "<option value=\"". $donnees['auteur'] ."\">" . $donnees['auteur'] . "</option>";
     }
     $search .= " 
         </select>
@@ -93,6 +95,7 @@ function literary_research() {
     echo $search;
 }
 
+//affinage page genre (roman, BD...)
 function pages_research($genre) {
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
@@ -105,11 +108,11 @@ function pages_research($genre) {
 
     $search = "<header><h3>Une recherche précise ?</h3></header>";
     $search .= "
-    <form style=\"padding-left: 20px; padding-right: 20px;\">
-        <select>
+    <form method=\"post\" onsubmit=\"afficherAuteur()\" style=\"padding-left: 20px; padding-right: 20px;\">
+        <select name=\"auteurChoisi\">
             <option value=\"-- Auteur --\">-- Auteur --</option>";
     while($donnees = $reponse->fetch()) {
-        $search .= "<option value=\"auteur1\">" . $donnees['auteur'] . "</option>";
+        $search .= "<option value=\"". $donnees['auteur'] ."\">" . $donnees['auteur'] . "</option>";
     }
     $search .= " 
         </select>
@@ -127,6 +130,7 @@ function pages_research($genre) {
     echo $search;
 }
 
+//affinage page style (autobiographie...)
 function style_research($genre, $style) {
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=lecture;charset=utf8', 'root', '');
@@ -139,11 +143,11 @@ function style_research($genre, $style) {
 
     $search = "<header><h3>Une recherche précise ?</h3></header>";
     $search .= "
-    <form style=\"padding-left: 20px; padding-right: 20px;\">
-        <select>
+    <form method=\"post\" onsubmit=\"afficherAuteur()\" style=\"padding-left: 20px; padding-right: 20px;\">
+        <select name=\"auteurChoisi\">
             <option value=\"-- Auteur --\">-- Auteur --</option>";
     while($donnees = $reponse->fetch()) {
-        $search .= "<option value=\"auteur1\">" . $donnees['auteur'] . "</option>";
+        $search .= "<option value=\"". $donnees['auteur'] ."\">" . $donnees['auteur'] . "</option>";
     }
     $search .= " 
         </select>
@@ -160,5 +164,10 @@ function style_research($genre, $style) {
     $reponse->closeCursor();
     echo $search;
 }
+
+//affichage du résultat d'un affinage par auteur
+function afficherAuteur() {
+
+};
 
 ?>
