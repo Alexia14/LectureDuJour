@@ -29,7 +29,7 @@
     </div>
 
     <!-- Main -->
-    <div class="wrapper style1">
+    <div class="wrapper style1" id="bottom_header">
 
         <div class="container">
             <article id="main" class="special">
