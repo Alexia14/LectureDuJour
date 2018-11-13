@@ -10,14 +10,20 @@ function oeuvres_proposes($genre) {
     $reponse = $bdd->prepare('SELECT DISTINCT style FROM oeuvres WHERE genre = ? ORDER BY style');
     $reponse->execute(array($genre));
 
-    $liste_styles = "<ul>";
-    while($donnees = $reponse->fetch()) {
-        $liste_styles .= "<li style=\"margin-left: 40px;\">" . $donnees['style'] . "</li>";
+    $resultat = [];
+    while ($donnees = $reponse->fetch()) {
+        array_push($resultat, $donnees['style']);
     }
-    $liste_styles .= "</ul>";
+
+    if ($resultat[0] != "") {
+        $liste_styles = "<p>Voici les types d'oeuvres correpondant au genre " . $genre . " :</p>";
+        foreach ($resultat as &$value) {
+            $liste_styles .= "<li style=\"margin-left: 40px;\">" . $value . "</li>";
+        }
+        echo $liste_styles;
+    }
 
     $reponse->closeCursor();
-    echo $liste_styles;
 }
 
 //affichage de toutes les oeuvres correspondantes au genre et style
